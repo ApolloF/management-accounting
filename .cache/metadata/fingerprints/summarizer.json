@@ -1,0 +1,15 @@
+{
+  "fingerprint": "76cf1b09ae1e001580889f8570d78b9d3564ab03c6d380672ec9d75dc6a73e88",
+  "timestamp": "2026-06-09T14:49:41.269487+00:00",
+  "config_version": "1.0.0",
+  "config": {
+    "enable_summarizer": false,
+    "summarizer_provider": "local",
+    "summarizer_model": "Qwen/Qwen3-4B-Instruct-2507-FP8",
+    "summarizer_max_pages": 10,
+    "summarizer_device": "",
+    "summarizer_model_cache_dir": "~/.cache/pdfkb-mcp/summarizer",
+    "summarizer_api_base": "",
+    "summarizer_api_key": ""
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "fingerprint": "708f96c5d0ff08e8e35dc2bc17075c25c855d9bb81f37dee51a9452044b72902",
+  "timestamp": "2026-06-09T14:49:41.268961+00:00",
+  "config_version": "1.0.0",
+  "config": {
+    "embedding_model": "text-embedding-3-large"
+  }
+}

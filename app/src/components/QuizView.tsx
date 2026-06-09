@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react'
 import type { Deel, Vraag } from '../types'
-import { Badge, Button, Card, DifficultyBadge, ProgressBar, Toggle } from './ui'
+import { Badge, Button, Card, DifficultyBadge, ProgressBar } from './ui'
 import type { ProgressApi } from '../hooks/useProgress'
-import { zichtbareVragen } from '../content'
+import { aanwezigeBronnen, zichtbareVragen } from '../content'
+import { FilterBar, type FilterState } from './FilterBar'
 
 export function QuizView({
   deel,
@@ -15,15 +16,35 @@ export function QuizView({
   onNaarTheorie: () => void
   onKlaar: () => void
 }) {
-  const toon = progress.state.toonZelfgemaakt
-  const vragen = useMemo(() => zichtbareVragen(deel, toon), [deel, toon])
+  const [filter, setFilter] = useState<FilterState>({
+    bronnen: [],
+    difficulties: [],
+    alleenOnaf: false,
+    toonZelfgemaakt: progress.state.toonZelfgemaakt,
+  })
   const [idx, setIdx] = useState(0)
 
-  // Houd de index binnen de grenzen als het aantal vragen verandert (toggle).
-  const veiligIdx = Math.min(idx, vragen.length - 1)
+  const beschikbareBronnen = useMemo(() => aanwezigeBronnen(deel), [deel])
+  const vragen = useMemo(
+    () =>
+      zichtbareVragen(deel, {
+        toonZelfgemaakt: filter.toonZelfgemaakt,
+        bronnen: filter.bronnen,
+        difficulties: filter.difficulties,
+        alleenOnaf: filter.alleenOnaf,
+        statusVan: progress.statusVan,
+      }),
+    [deel, filter, progress.statusVan, progress.state.vragen],
+  )
+
+  const veiligIdx = Math.min(idx, Math.max(0, vragen.length - 1))
   const vraag = vragen[veiligIdx]
 
-  if (!vraag) return null
+  const updateFilter = (s: FilterState) => {
+    setFilter(s)
+    if (s.toonZelfgemaakt !== progress.state.toonZelfgemaakt) progress.setToonZelfgemaakt(s.toonZelfgemaakt)
+    setIdx(0)
+  }
 
   return (
     <div>
@@ -31,39 +52,37 @@ export function QuizView({
         ← Terug naar theorie
       </button>
       <div className="quiz-head">
-        <h2 style={{ margin: 0, fontSize: 'var(--fs-lg)' }}>
-          Deel {romein(deel.nr)} — oefenvragen
-        </h2>
+        <h2 style={{ margin: 0, fontSize: 'var(--fs-lg)' }}>Deel {romein(deel.nr)} — oefenvragen</h2>
         <span className="q-counter">
-          Vraag {veiligIdx + 1} / {vragen.length}
+          {vragen.length > 0 ? `Vraag ${veiligIdx + 1} / ${vragen.length}` : '0 vragen'}
         </span>
       </div>
 
-      <div className="quiz-toolbar">
-        <Toggle
-          checked={toon}
-          onChange={(v) => {
-            progress.setToonZelfgemaakt(v)
-            setIdx(0)
-          }}
-          label="Toon ook zelfgemaakte oefenvragen"
-        />
-      </div>
+      <FilterBar beschikbareBronnen={beschikbareBronnen} state={filter} onChange={updateFilter} />
 
-      <ProgressBar value={((veiligIdx + 1) / vragen.length) * 100} />
-
-      <VraagKaart key={vraag.id} vraag={vraag} progress={progress} />
-
-      <div className="quiz-nav">
-        <Button variant="secondary" disabled={veiligIdx === 0} onClick={() => setIdx(veiligIdx - 1)}>
-          ← Vorige
-        </Button>
-        {veiligIdx < vragen.length - 1 ? (
-          <Button onClick={() => setIdx(veiligIdx + 1)}>Volgende →</Button>
-        ) : (
-          <Button onClick={onKlaar}>Naar mijn voortgang →</Button>
-        )}
-      </div>
+      {!vraag ? (
+        <Card>
+          <p className="muted" style={{ margin: 0 }}>
+            Geen vragen die aan deze filters voldoen. Pas de bron-/niveaufilter aan of zet "alleen
+            fout / nog niet gedaan" uit.
+          </p>
+        </Card>
+      ) : (
+        <>
+          <ProgressBar value={((veiligIdx + 1) / vragen.length) * 100} />
+          <VraagKaart key={vraag.id} vraag={vraag} progress={progress} />
+          <div className="quiz-nav">
+            <Button variant="secondary" disabled={veiligIdx === 0} onClick={() => setIdx(veiligIdx - 1)}>
+              ← Vorige
+            </Button>
+            {veiligIdx < vragen.length - 1 ? (
+              <Button onClick={() => setIdx(veiligIdx + 1)}>Volgende →</Button>
+            ) : (
+              <Button onClick={onKlaar}>Naar mijn voortgang →</Button>
+            )}
+          </div>
+        </>
+      )}
     </div>
   )
 }

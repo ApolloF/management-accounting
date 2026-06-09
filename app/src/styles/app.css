@@ -213,6 +213,33 @@ code, .mono { font-family: var(--font-mono); font-size: 0.92em; }
 .feedback .uitleg { white-space: pre-wrap; font-size: var(--fs-sm); }
 .quiz-nav { display: flex; justify-content: space-between; gap: var(--sp-3); margin-top: var(--sp-4); }
 
+/* ---- FilterBar & chips ---- */
+.filterbar { display: flex; flex-direction: column; gap: var(--sp-3); padding: var(--sp-4); background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r-md); margin-bottom: var(--sp-4); }
+.filter-group { display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap; }
+.filter-label { font-size: var(--fs-xs); font-weight: var(--fw-bold); text-transform: uppercase; letter-spacing: 0.04em; color: var(--c-text-faint); min-width: 48px; }
+.chips { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
+.filter-toggles { gap: var(--sp-5); }
+.chip {
+  font-family: inherit; font-size: var(--fs-xs); font-weight: var(--fw-semibold);
+  padding: var(--sp-1) var(--sp-3); border-radius: var(--r-full); cursor: pointer;
+  background: var(--c-surface-2); color: var(--c-text-soft); border: 1px solid var(--c-border);
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.chip:hover { border-color: var(--c-border-strong); }
+.chip-on { background: var(--c-brand); color: #fff; border-color: transparent; }
+.chip-on.chip-makkelijk { background: var(--c-diff-makkelijk); }
+.chip-on.chip-gemiddeld { background: var(--c-diff-gemiddeld); }
+.chip-on.chip-lastig { background: var(--c-diff-lastig); }
+.chip-on.chip-berucht { background: var(--c-diff-berucht); }
+
+/* ---- Examen-modus ---- */
+.exam-timer { font-variant-numeric: tabular-nums; font-weight: var(--fw-bold); font-size: var(--fs-lg); }
+.exam-timer.urgent { color: var(--c-danger); }
+.exam-bar { display: flex; align-items: center; gap: var(--sp-4); flex-wrap: wrap; position: sticky; top: 58px; background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r-md); padding: var(--sp-3) var(--sp-4); margin-bottom: var(--sp-4); z-index: 5; }
+.grade-big { font-size: 3rem; font-weight: var(--fw-bold); line-height: 1; }
+.grade-pass { color: var(--c-success); }
+.grade-fail { color: var(--c-danger); }
+
 /* ---- Resultaten ---- */
 .focus-banner {
   background: linear-gradient(135deg, var(--c-brand), var(--c-brand-hover));
@@ -233,3 +260,78 @@ code, .mono { font-family: var(--font-mono); font-size: 0.92em; }
 .mt-4 { margin-top: var(--sp-4); }
 .mt-5 { margin-top: var(--sp-5); }
 .center { text-align: center; }
+
+/* ============================================================
+   Animaties & overgangen
+   ============================================================ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+@keyframes pop { 0% { transform: scale(0.96); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+
+/* View-overgang: elke hoofd-view fade-up't bij binnenkomst */
+main.container > div { animation: fadeUp var(--dur) var(--ease); }
+.deel-list .card { animation: fadeUp var(--dur) var(--ease) backwards; }
+.deel-list .card:nth-child(1) { animation-delay: 20ms; }
+.deel-list .card:nth-child(2) { animation-delay: 50ms; }
+.deel-list .card:nth-child(3) { animation-delay: 80ms; }
+.deel-list .card:nth-child(4) { animation-delay: 110ms; }
+.deel-list .card:nth-child(5) { animation-delay: 140ms; }
+.deel-list .card:nth-child(6) { animation-delay: 170ms; }
+.deel-list .card:nth-child(7) { animation-delay: 200ms; }
+.hint-card { animation: slideIn var(--dur) var(--ease); }
+.feedback { animation: pop var(--dur) var(--ease); }
+.voorbeeld-body { animation: fadeIn var(--dur) var(--ease); }
+.optie { transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease); }
+.optie:not(:disabled):active { transform: scale(0.99); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Mobile / responsive  (≤ 640px)
+   ============================================================ */
+@media (max-width: 640px) {
+  .container { padding: var(--sp-4) var(--sp-3); }
+  .topbar h1 { font-size: var(--fs-base); }
+  .topbar-inner { flex-wrap: wrap; gap: var(--sp-2); padding: var(--sp-2) var(--sp-3); }
+  .intro h2 { font-size: var(--fs-xl); }
+  .intro .lede { font-size: var(--fs-base); }
+
+  .card { padding: var(--sp-4); }
+
+  /* Dashboard-kaart → één kolom, gewicht + cta eronder */
+  .deel-card { grid-template-columns: auto 1fr; gap: var(--sp-3); }
+  .deel-rank { font-size: var(--fs-lg); }
+  .deel-weight { grid-column: 1 / -1; display: flex; align-items: baseline; gap: var(--sp-2); text-align: left; }
+  .deel-weight .big { font-size: var(--fs-lg); }
+  .deel-weight .lbl { white-space: nowrap; }
+  .deel-weight .lbl br { display: none; }
+  .deel-cta { justify-content: stretch; }
+  .deel-cta .btn { width: 100%; }
+
+  /* Quiz */
+  .quiz-toolbar { flex-direction: column; align-items: flex-start; gap: var(--sp-3); }
+  .quiz-nav { flex-direction: column-reverse; }
+  .quiz-nav .btn { width: 100%; }
+  .q-stam { font-size: var(--fs-base); }
+  .optie { padding: var(--sp-3); }
+
+  /* Resultatentabel horizontaal scrollbaar */
+  .res-table { display: block; overflow-x: auto; white-space: nowrap; }
+
+  /* rij-acties stacken */
+  .row.between { flex-direction: column; align-items: flex-start; }
+  .focus-banner { padding: var(--sp-5); }
+  .focus-banner h2 { font-size: var(--fs-xl); }
+
+  /* tap-targets */
+  .btn { min-height: 42px; }
+  .optie { min-height: 44px; }
+}

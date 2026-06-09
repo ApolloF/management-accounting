@@ -1,0 +1,1749 @@
+{
+  "checksum": "aee7229bc3e86e56797dfca8ef55e515aec11c928d263d58e7111d888fba3797",
+  "timestamp": "2026-06-09T14:49:54.000095+00:00",
+  "parsing_fingerprint": "2be51dd71b045b8c3de3a733f4f3d643ed51ada5b7751c9320428b99e999aa2c",
+  "chunking_fingerprint": "9ad09a3c293cb2d5caf136831513cc230f0977aa6c7c96e63c24763f08ce8950",
+  "chunks": [
+    {
+      "id": "chunk_bf34f73d4c923b04",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "**(EBP026A05)**",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998625+00:00",
+        "Header 1": "Page 1",
+        "Header 2": "**Management Accounting BDK**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 0
+    },
+    {
+      "id": "chunk_84e053fed8563dc9",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "**(week 1)**  \n1  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998647+00:00",
+        "Header 1": "Page 1",
+        "Header 2": "**deel I**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 1
+    },
+    {
+      "id": "chunk_8ca96920d4c6a808",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "2  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998655+00:00",
+        "Header 1": "Page 2",
+        "Header 2": "**niveau A**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 2
+    },
+    {
+      "id": "chunk_428adf402ed35722",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "U bakt en verkoopt stroopwafels en hamburgers op de Grote Markt. Daarvoor gebruikt u € 0,30 stroop per stroopwafel en € 0,40 gehakt per hamburger.  \nVerder beschikt u over een bakplaat waarop u elke maand € 350 afschrijft. U neemt het niet zo nauw met de hygiëne (en uw klanten trouwens ook niet) en u bakt stroopwafels en hamburgers vrolijk door elkaar, naast elkaar, waar maar een plekje is op de bakplaat.  \nNaarmate u meer bakt, verbruikt u meer bakboter. In de maand maart bedroegen de kosten van boter € 50. Tenslotte heeft u nog een student met reclameborden in het centrum rondlopen, welke u 10% betaalt van de omzet van stroopwafels en hamburgers.  \nU bakte en verkocht in maart 3.000 stroopwafels voor € 1,00 en 4.000 hamburgers, ook voor € 1,00 (totale omzet dus € 7.000).  \nWat u bakt, verkoopt u direct. U heeft dus geen begin- of eindvoorraden.  \n- a. Wat was de omvang van de kosten in maart die variabel en direct zijn?  \n- b. Idem variabel en indirect?",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998661+00:00",
+        "Header 1": "Page 3",
+        "Header 2": "**Casus variabele <> constante, directe <> indirecte kosten**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 3
+    },
+    {
+      "id": "chunk_a5653062c46fb8e9",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "Wat u bakt, verkoopt u direct. U heeft dus geen begin- of eindvoorraden.  \n- a. Wat was de omvang van de kosten in maart die variabel en direct zijn?  \n- b. Idem variabel en indirect?  \n- c. Idem constant en direct?  \n- d. Idem constant en indirect?  \n- e. Aangezien hamburgers en stroopwafels ongeveer even groot zijn wat betreft hun fysieke omvang, besluit u de kosten van de boter en bakplaat naar rato van hun gebakken aantallen toe te rekenen (dus 3/7[e] deel voor de stroopwafels, 4/7[e] deel voor de hamburgers). Wat betekent dat voor de kostenstructuur?  \n- f. Stel u besluit alleen nog maar stroopwafels te verkopen. Wat betekent dat voor de kostenstructuur?  \n3  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998670+00:00",
+        "Header 1": "Page 3",
+        "Header 2": "**Casus variabele <> constante, directe <> indirecte kosten**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 4
+    },
+    {
+      "id": "chunk_74be1d495994bb73",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "1. Een onderneming fabriceert tafels. Daarvoor worden planken gebruikt. Van dat gebruik is 10% afval. Als alle planken zijn verbruikt en alle tafels zijn gefabriceerd, wordt van de tafels 5% afgekeurd, hetgeen uitval vormt. Afval en uitval hebben verder geen waarde en zijn onvermijdelijk. De onderneming past de integrale standaard kostprijsmethode toe.  \n- Hoeveel procent van de waarde van de oorspronkelijke voorraad planken kan worden aangeduid als kosten van verspilling?  \n- a. 0   %  \n- b. 5   % c. 10    % d. 14,5 %  \n2. Stel een taxi heeft een economische levensduur van 4 jaar. In het 5[e] jaar zal gelden dat  \n- a. voor dat jaar de kosten van de taxi hoger zijn dan de opbrengsten ervan  \n- b. voor dat jaar de complementaire kosten van de taxi hoger zijn dan de geldswaarde van de werkeenheden (zijnde de gereden kilometers)  \n- c. in dat jaar de relatieve technische levensduur van de taxi is bereikt  \n- d. in dat jaar de absolute technische levensduur van de taxi is bereikt",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998679+00:00",
+        "Header 1": "Page 4",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 5
+    },
+    {
+      "id": "chunk_75a19dc062898462",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- c. in dat jaar de relatieve technische levensduur van de taxi is bereikt  \n- d. in dat jaar de absolute technische levensduur van de taxi is bereikt  \n3. De waardedaling van een duurzaam productiemiddel leidt tot afschrijvingskosten. De waardedaling wordt namelijk met behulp van een afschrijvingsmethode verdeeld over de technische levensduur van het actief.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n4. Een ondernemer die handelt in tafeltennistafels maakt per per 1 januari 2013 een overzicht van de volgende balansposten (cijfers in euro’s):  \n|Tafeltennistafels|30.000|\n|---|---|\n|Winkelpand|240.000|\n|Hypothecaire leningophetpandvan5%|190.000|\n|Kasgeld|1.200|\n|Crediteuren|12.000|\n|Debiteuren|4.100|\n|Tegoed bijde Rabo-bank|2.300|\n|Schuld bijde ING-bank|3.500|  \nHoe groot is zijn eigen vermogen per balansdatum?  \n- a. 72.100  \n- b. 87.900  \n- c. 205.500  \n- d. 277.600  \n4",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998685+00:00",
+        "Header 1": "Page 4",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 6
+    },
+    {
+      "id": "chunk_55611f21de572539",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "|Debiteuren|4.100|\n|Tegoed bijde Rabo-bank|2.300|\n|Schuld bijde ING-bank|3.500|  \nHoe groot is zijn eigen vermogen per balansdatum?  \n- a. 72.100  \n- b. 87.900  \n- c. 205.500  \n- d. 277.600  \n4  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998693+00:00",
+        "Header 1": "Page 4",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 7
+    },
+    {
+      "id": "chunk_9d451138c4e32acf",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "5. Omzetbelasting (BTW) is  \n- a. nooit een kostprijsverhogende belasting  \n- b. alleen een kostprijsverhogende belasting als een onderneming is vrijgesteld voor het in rekening brengen van omzetbelasting  \n- c. een kostprijsverhogende belasting als een onderneming omzetbelasting in rekening moet brengen d. altijd een kostprijsverhogende belasting  \n6. Uitgaven worden in de bedrijfseconomie gedefinieerd als in de tijd gespreide kosten.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n7. Rente speelt bedrijfseconomisch een belangrijke rol bij het waarderen van aandelen, namelijk  \n- A. als discontopercentage voor het bepalen van de rentabiliteitswaarde van aandelen  \n- B. als interestpercentage waar het de vermogenskosten en dus de hoogte van de winst per aandeel betreft  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist  \n- d. A. en B. zijn onjuist",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998699+00:00",
+        "Header 1": "Page 5",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 8
+    },
+    {
+      "id": "chunk_75c9751f2114f01b",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist  \n- d. A. en B. zijn onjuist  \n8. Het feit dat een onderneming gefinancierd is met eigen vermogen kan van invloed zijn op verschillen tussen de bedrijfseconomische en fiscale winstberekening.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n9. De decaan van de Faculteit Economie en Bedrijfskunde wil haar docenten extra belonen voor goede prestaties. Weliswaar wordt het huidige loonstelsel dat gebaseerd is op tijdloon gehandhaafd, daarnaast krijgen docenten een extra uitbetaling als bij de evaluatie blijkt dat ze de gemiddelde norm hebben overschreden.  \nDeze combinatie van beloningen kan worden aangeduid als een premieloonstelsel.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n5  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998705+00:00",
+        "Header 1": "Page 5",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 9
+    },
+    {
+      "id": "chunk_5b7ab0e60de85c55",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "10. Maïs kan op verschillende manieren worden gebruikt.  \n- A. Als belangrijkste bestanddeel van tortilla’s (maïskoeken) is het een hulpstof.  \n- B. Als brandstof (biodiesel) voor het laten rijden van auto’s is het een halffabrikaat.  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist  \n- d. A. en B. zijn onjuist  \n11. Een ondernemer heeft een machine nodig die voor de normale productie een capaciteit van 10.000 eenheden per periode vereist. Daarnaast is in piektijden vanwege seizoenproductie een extra capaciteit van 4.000 eenheden nodig. Aangezien de machine elke periode moet worden schoongemaakt is nog extra capaciteit van 2.000 eenheden vereist.  \n- Machines zijn te koop in eenheden van 10.000, 15.000 en 20.000. De ondernemer koopt een machine van 20.000 eenheden. In deze situatie is sprake van een irrationele overcapaciteit van  \n- a. 0 eenheden  \n- b. 4.000 eenheden  \n- c. 6.000 eenheden  \n- d. 10.000 eenheden  \n6",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998712+00:00",
+        "Header 1": "Page 6",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 10
+    },
+    {
+      "id": "chunk_e7af1e621b520be7",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- a. 0 eenheden  \n- b. 4.000 eenheden  \n- c. 6.000 eenheden  \n- d. 10.000 eenheden  \n6  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998719+00:00",
+        "Header 1": "Page 6",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 11
+    },
+    {
+      "id": "chunk_c4f7422178b7a5fc",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "7  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998725+00:00",
+        "Header 1": "Page 7",
+        "Header 2": "**niveau B**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 12
+    },
+    {
+      "id": "chunk_77278f6facb63f32",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "Een onderneming die erwtensoep produceert, wil een nieuwe machine aanschaffen om de betreffende soep in plastic te verpakken in plaats van in te blikken. Technisch gaat de machine lang mee, zo is de verwachting. De fabrikant van de machine is te zijner tijd bereid een goede inruilprijs te bieden als de onderneming in de toekomst een nieuw exemplaar wenst af te nemen. Overigens zal de machine ook een behoorlijke waarde hebben op de tweedehandsmarkt.  \nGroot liefhebber als u bent van erwtensoep hebt u gretig een deeltijdbaan geaccepteerd bij de onderneming. U staat de leiding bij met raad en daad en op grond van uw opleiding zijn de verwachtingen dan ook hooggespannen. U wordt verzocht uw licht te laten schijnen over de voorgenomen investering. Op het overzicht op de volgende pagina treft u begrote gegevens aan die u door de ondernemingsleiding en het hoofd productieplanning worden voorgeschoteld.  \n- a. Bepaal de economische levensduur van de machine.",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998731+00:00",
+        "Header 1": "Page 8",
+        "Header 2": "**Casus economische levensduur**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 13
+    },
+    {
+      "id": "chunk_c94dc80a6c3a84a7",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- a. Bepaal de economische levensduur van de machine.  \nStel dat u in uw berekeningen zou willen betrekken dat er in het 1[e] jaar aanloopproblemen zouden kunnen zijn bij het volledig in bedrijf krijgen van de machine en dat het aantal productie-uren niet 4.000, maar 3.000 zou bedragen. In de andere jaren blijft de productie zoals begroot.  \n- b. Beredeneer (dus zonder uit te rekenen) wat het effect hiervan op de economische levensduur van de machine is (zal die korter worden, langer worden, niet veranderen; waarom).  \n- c. Bereken dat effect.  \n- d. Vergelijk de kostprijs bij de economische levensduur berekend bij a. met die berekend bij c. Wat is de verklaring voor het ontstane verschil?",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998736+00:00",
+        "Header 1": "Page 8",
+        "Header 2": "**Casus economische levensduur**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 14
+    },
+    {
+      "id": "chunk_a48a3dc07e0ded89",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- c. Bereken dat effect.  \n- d. Vergelijk de kostprijs bij de economische levensduur berekend bij a. met die berekend bij c. Wat is de verklaring voor het ontstane verschil?  \nU gaat uit van de oorspronkelijke begroting (dus een aantal productie-uren van 4.000 in het 1[e] jaar). Stel dat de _totale_ waardedaling van de machine in 10 jaar zal zijn zoals begroot, maar dat u benieuwd bent wat de gevolgen zouden zijn als de jaarlijkse waardedaling elk jaar hetzelfde zou zijn (en dus gelijk is aan de totale waardedaling gedeeld door 10).  \n- e. Beredeneer (dus zonder uit te rekenen) wat het effect hiervan op de economische levensduur van de machine is (zal die korter worden, langer worden, niet veranderen; waarom).  \n- U gaat uit van de oorspronkelijke begroting (dus een aantal productie-uren van 4.000 in het  \n- 1[e] jaar en het oorspronkelijke verloop van de waardedaling van de machine).",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998742+00:00",
+        "Header 1": "Page 8",
+        "Header 2": "**Casus economische levensduur**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 15
+    },
+    {
+      "id": "chunk_b9e809415e854dd9",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- U gaat uit van de oorspronkelijke begroting (dus een aantal productie-uren van 4.000 in het  \n- 1[e] jaar en het oorspronkelijke verloop van de waardedaling van de machine).  \n- f. Wat is de restwaarde van de machine bij de betreffende economische levensduur (zie ook punt a)?  \n- g. Maak een opstelling waaruit blijkt welk bedrag per jaar beschikbaar is voor afschrijvingen.  \n- h. Controleer of de uitkomst bij punt g leidt tot de waardedaling behorend bij de verwachte economische levensduur (zie ook punt a).  \n8  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998748+00:00",
+        "Header 1": "Page 8",
+        "Header 2": "**Casus economische levensduur**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 16
+    },
+    {
+      "id": "chunk_c4867d986fc8138e",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "Aanschafwaarde: €          450.000  \nVerloop restwaarde (aan het einde van elk jaar):  \n|jaar|1||€|390.000<br>||\n|---|---|---|---|---|---|\n|jaar|2||€|340.000<br>||\n|jaar|3||€|295.000<br>||\n|jaar|4|en verder|€|30.000<br>|daling per jaar|  \nComplementaire kosten (bedienend personeel, onderhoud, brandstof, reparaties, etc.):  \n|jaar|1||130.000<br>€|\n|---|---|---|---|\n|jaar|2||130.000<br>€|\n|jaar|3||132.000<br>€|\n|jaar|4|en verder|toename met € 1.000 vermenigvuldigd met levensduur in jaren|\n||||(toename in jaar 4 met € 4.000, in jaar 5 met € 5.000, etc.)|  \nAantal machine-uren:  \n|jaar|1|4.000|\n|---|---|---|\n|jaar|2|4.000|\n|jaar|3|3.900|\n|jaar|4|3.900|\n|jaar|5|3.850|\n|jaar|6|3.800|\n|jaar|7|3.500|\n|jaar|8|3.200|\n|jaar|9|2.800|\n|jaar|10|2.400|  \n9  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998755+00:00",
+        "Header 1": "Page 9",
+        "Header 2": "**Gegevens machine voor het inpakken van erwtensoep**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 17
+    },
+    {
+      "id": "chunk_48a6b80e47037925",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "1. In het leerboek ‘Verkenningen in Management Accounting’ blijkt management control een belangrijke rol te spelen. Het gebruik van de integralestandaardkostprijs is de toepassing van een zogenaamde management accounting techniek. Welk van onderstaande situaties kan het meest worden aangemerkt als het toepassen van die kostprijs voor het uitoefenen van management control?  \n- a. Afwijkingen tussen de werkelijke kostprijs en de integralestandaardkostprijs leiden tot aanpassingen in het productieproces.  \n- b. De niet verkochte producten worden op de balans gewaardeerd tegen de integralestandaardkostprijs.  \n- c. De verkoopprijs van producten wordt bepaald door de integralestandaardkostprijs te verhogen met 30%.  \n- d. Bij het bepalen van verkoopresultaten worden de kosten van de verkochte producten gewaardeerd tegen de integralestandaardkostprijs.  \n2. Bij de vertaling van een verkoopplan in een productieplan",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998762+00:00",
+        "Header 1": "Page 10",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 18
+    },
+    {
+      "id": "chunk_4e67d3e66a364a70",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "2. Bij de vertaling van een verkoopplan in een productieplan  \n- a. wordt het ene operationele plan vertaald in een ander operationeel plan  \n- b. wordt een operationeel plan vertaald in een tactisch plan  \n- c. wordt een tactisch plan vertaald in een operationeel plan  \n- d. wordt het ene tactische plan vertaald in een ander tactisch plan  \n3. U bent als jongste medewerker van Concern Control druk bezig uit te zoeken hoe het verschil tussen de werkelijke kosten en de integralestandaardkostprijs van een belangrijk product uiteen kan worden gerafeld in deelverschillen. Ook gaat u onderzoeken hoe die verschillen zijn ontstaan. In welke fase van de zogenaamde PDCA-cyclus bevindt u zich met die activiteit?  \n- a. P  \n- b.  \n- c.  \n- d.  \n10  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998769+00:00",
+        "Header 1": "Page 10",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 19
+    },
+    {
+      "id": "chunk_8e079a4152a69901",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "4. Op de Grote Markt bakt en verkoopt u per dag 150 stroopwafels voor € 0,80 per stuk en 200 broodjes hamburgers voor € 1,30 per stuk. Uw dagelijkse kosten voor de huur van uw plaats op de Grote Markt bedragen € 70 en uw dagelijkse afschrijvingskosten € 25. De kosten van grond- en hulpstoffen bedragen € 0,20 per stroopwafel en € 0,35 per broodje hamburger.  \n- Om de verkoop te stimuleren heeft u een student met reclameborden in het centrum rondlopen. De aantallen verkochte producten en de daarmee ontvangen opbrengsten beschouwt u als een prestatie van de student, aangezien zijn reclame-inspanningen het publiek attenderen op uw bedrijfsactiviteiten.  \nU vraagt zich af hoe u de student het beste kunt belonen:  \n- een loon van 20% van de verkoopprijs van elk product  \n- een uurloon van € 12; vanaf 10.00 uur ’s ochtends zal hij dagelijks zes uren rondlopen  \n- een loon van 10% van de omzet van de totale omzet in combinatie met een uurloon van € 5 voor gelopen uren (zie vorige punt)",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998776+00:00",
+        "Header 1": "Page 11",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 20
+    },
+    {
+      "id": "chunk_5adf645ff0cc88f6",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- een loon van 10% van de omzet van de totale omzet in combinatie met een uurloon van € 5 voor gelopen uren (zie vorige punt)  \n- een loon ter hoogte van 40% van uw winst (i.c. de winst voor aftrek van loonkosten)  \n- Hetgeen u aan de student betaalt, zijn uw loonkosten. We zien af van belastingen.  \nWelk loonstelsel pakt voor u het goedkoopste uit?  \n- a. het tijdloonstelsel  \n- b. het premieloonstelsel  \n- c. het stukloonstelsel  \n- d. het winstdelingsstelsel  \n5. De twee ondernemingen Anson en Zolan hebben hetzelfde balanstotaal. Ook hebben beide bedrijven dezelfde positieve brutowinst gerealiseerd (resultaat van opbrengsten en kosten exclusief rentekosten).",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998783+00:00",
+        "Header 1": "Page 11",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 21
+    },
+    {
+      "id": "chunk_a80219b2fd9a9f42",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "Anson is volledig gefinancierd met vreemd vermogen, Zolan voor driekwart (en derhalve voor 25% met eigen vermogen). Beide ondernemingen zijn rente verschuldigd over het vreemd vermogen. Voor Zolan bedraagt dat percentage 8%. Zolan neemt ‘opportunity costs’ in beschouwing en rekent met een rente van 4% over het eigen vermogen.  \n- A. De fiscale winst van beide ondernemingen is aan elkaar gelijk als Anson 6% rente verschuldigd is over het vreemd vermogen.  \n- B. De bedrijfseconomische winst van beide ondernemingen is aan elkaar gelijk als Anson 7% rente verschuldigd is over het vreemd vermogen.  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist d. A. en B. zijn onjuist  \n11  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998790+00:00",
+        "Header 1": "Page 11",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 22
+    },
+    {
+      "id": "chunk_787d9a6f8a3e04b5",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "De volgende drie vragen gaan over uw onderneming op de Vismarkt in Groningen.  \nIn de maand maart beschikt u over de volgende gegevens:  \nU bakt en verkoopt hamburgers op de Vismarkt. Daarvoor gebruikt u € 0,70 gehakt per hamburger (kostenpost 1).  \nVerder beschikt u over een bakplaat waarop u elke maand € 200 afschrijft (kostenpost 2). Naarmate u meer bakt, verbruikt u meer bakboter (kostenpost 3). In de maand maart bedroegen de kosten van boter € 40.  \nTenslotte heeft u nog een student met reclameborden in het centrum rondlopen waarop uw koopwaar wordt aangeprezen. U betaalt hem € 10,00 per uur voor 45 uur rondlopen in het centrum in de maand maart (kostenpost 4).  \nU bakte en verkocht in maart 2.500 hamburgers voor € 1,20 per stuk.  \nWat u bakt, verkoopt u direct. U heeft dus geen begin- of eindvoorraden.  \nElk van de genoemde kostensoorten kunt u onderbrengen in onderstaande kwadrant waar het gaat om het karakter van de kosten:",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998799+00:00",
+        "Header 1": "Page 12",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 23
+    },
+    {
+      "id": "chunk_113c14a542078fa3",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "Elk van de genoemde kostensoorten kunt u onderbrengen in onderstaande kwadrant waar het gaat om het karakter van de kosten:  \n**==> picture [150 x 9] intentionally omitted <==**  \n**----- Start of picture text -----**<br>\ndirect  indirect<br>**----- End of picture text -----**<br>  \n_variabel constant_  \n**==> picture [227 x 123] intentionally omitted <==**  \nIn de maand april voert u de volgende veranderingen door:  \n- U produceert en verkoopt nog slechts de 60% van het oorspronkelijke aantal hamburgers. De productie / verkoop die wegvalt, vervangt u door de productie en verkoop van een aantal stroopwafels dat even groot is als het weggevallen aantal hamburgers. U verkoopt stroopwafels voor € 0,90 per stuk.  \n- U neemt het niet zo nauw met de hygiëne (en uw klanten trouwens ook niet) en u bakt stroopwafels en hamburgers vrolijk door elkaar, naast elkaar, waar maar een plekje is op de bakplaat.  \nU gebruikt € 0,35 stroop per stroopwafel  (kostenpost 5).",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998808+00:00",
+        "Header 1": "Page 12",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 24
+    },
+    {
+      "id": "chunk_88d956612c02e212",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "U gebruikt € 0,35 stroop per stroopwafel  (kostenpost 5).  \n- U betaalt de student, die nu reclame maakt voor beide productgroepen, niet langer € 10,00 per uur voor 45 uur rondlopen in het centrum, maar u betaalt hem 20% van de omzet van beide productgroepen.  \n6. De omvang van de **directe variabele** kosten is in maart  \n- a. € 190 lager dan in april  \n- b. € 150 lager dan in april  \n- c. € 350 hoger dan in april  \n- d. € 390 hoger dan in april  \n12  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998815+00:00",
+        "Header 1": "Page 12",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 25
+    },
+    {
+      "id": "chunk_45d5dc0aa65be4ff",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "7. De omvang van de **indirecte variabele** kosten is in maart lager dan in april.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n8. April met maart vergelijkend blijven de afschrijvingskosten in hetzelfde kwadrant staan.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n13  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998821+00:00",
+        "Header 1": "Page 13",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 26
+    },
+    {
+      "id": "chunk_fe450ab43dc39289",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "14  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998848+00:00",
+        "Header 1": "Page 14",
+        "Header 2": "**niveau C**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 27
+    },
+    {
+      "id": "chunk_ef1a556e234bfe39",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "1. Welk antwoord is volgens u het meest juist: de balans van een onderneming is altijd in evenwicht, doordat  \n- a. het eigen vermogen wordt berekend als het saldo van bezittingen en vreemd vermogen  \n- b. het vreemd vermogen wordt berekend als het saldo van bezittingen en eigen vermogen c. het totale vermogen wordt berekend als som van het eigen en vreemd vermogen  \n- d. de vlottende activa gelijk zijn aan de vlottende passiva en de vaste activa gelijk zijn aan de vaste passiva  \n2. Een handelaar in groenten bemerkt dat zijn voorraad tomaten verrot is en niet langer verkocht kan worden. De afwaardering van deze handelsvoorraad goederen heeft consequenties voor  \n- A. de debetzijde van de balans van zijn onderneming  \n- B. de creditzijde van de balans van zijn onderneming  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist d. A. en B. zijn onjuist  \nDe volgende gegevens hebben betrekking op de volgende vier vragen.",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998866+00:00",
+        "Header 1": "Page 15",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 28
+    },
+    {
+      "id": "chunk_beb9725c1d6d7635",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist d. A. en B. zijn onjuist  \nDe volgende gegevens hebben betrekking op de volgende vier vragen.  \nEen verffabrikant wil een nieuwe machine aanschaffen. Technisch gaat de machine zo’n 10 jaar mee, is de verwachting. De fabrikant is bereid in de loop der tijd een goede inruilprijs te bieden als de onderneming in de toekomst opnieuw een machine wenst af te nemen. Overigens zal de machine ook een behoorlijke waarde hebben op de tweedehandsmarkt. Desalniettemin kiest de fabrikant voor zekerheid: hij wil de machine in 7 jaar volledig hebben afgeschreven (restwaarde 0).  \n15  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998879+00:00",
+        "Header 1": "Page 15",
+        "Header 2": "**Multiple choice vragen**",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 29
+    },
+    {
+      "id": "chunk_72852f30f46e0d69",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "De volgende gegevens die met deze investering te maken hebben, zijn begroot:  \nAanschafwaarde: €           55.000 Verloop restwaarde (aan het einde van elk jaar): jaar 1 €           43.000 jaar 2 €           33.000 jaar 3 €           24.000 jaar 4 en verder daling per jaar €      6.000  \nComplementaire kosten (bedienend personeel, onderhoud, brandstof, reparaties, etc.): jaar 1 €           26.000 jaar 2 €           26.000 jaar 3 €           26.400 jaar 4 en verder toename met € 200 vermenigvuldigd met levensduur in jaren (toename in jaar 4 met € 800, in jaar 5 met € 1.000, etc.)  \nAantal machine-uren:  \njaar 1 1.500 jaar 2 2.000 jaar 3 1.900 jaar 4 1.950 jaar 5 1.925 jaar 6 1.900 jaar 7 1.750  \n3. De economische levensduur van de machine is  \n- a. 4 jaar  \n- b. 5 jaar  \n- c. 6 jaar  \n- d. 7 jaar  \n4. Na afloop van de economische levensduur zal de machine geheel zijn afgeschreven.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998893+00:00",
+        "Header 1": "Page 16",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 30
+    },
+    {
+      "id": "chunk_d68fb8d1e6fdc4c7",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- a. 4 jaar  \n- b. 5 jaar  \n- c. 6 jaar  \n- d. 7 jaar  \n4. Na afloop van de economische levensduur zal de machine geheel zijn afgeschreven.  \nDeze stelling is  \n- a. Juist  \n- b. Onjuist  \n5. De verffabrikant verwachtte in het eerste jaar opstartproblemen, waardoor hij in dat jaar een productie heeft begroot van 1.500 machine-uren (variant 1). Als die problemen zich niet voordoen, beschikt hij in het 1[e] jaar over 2.000 machine-uren (variant 2). Hij is benieuwd wat zo’n meevaller voor invloed zal hebben op de economische levensduur van de machine.  \n- Als de productie in het 1[e] jaar niet 1.500 maar 2.000 machine-uren bedraagt, zal de economische levensduur van de machine  \n- a. afnemen  \n- b. gelijk blijven c. toenemen  \n16  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998903+00:00",
+        "Header 1": "Page 16",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 31
+    },
+    {
+      "id": "chunk_567c24186d59246c",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "6. De kosten per machine-uur op basis van de economische levensduur van de machine zijn bij variant 1  \n- a. lager dan die bij variant 2  \n- b. gelijk aan die bij variant 2  \n- c. hoger dan die bij variant 2  \n7. De economische levensduur van een machine met een aanschafprijs van € 175.000 is 6 jaar. Die levensduur is gebaseerd op een kostprijs per machine-uur van € 33,00. Het cumulatief aantal machine-uren (dus tot en met het 6[e] jaar) bedraagt 11.400 en de daarbij behorende cumulatieve complementaire kosten zijn € 282.000.  \n- Aan het eind van dat 6[e] jaar wordt de machine verkocht tegen boekwaarde (dus zonder boekwaardeverlies of –winst).  \nDe verkoopprijs van de machine is  \n- a. €   26.200  \n- b. €   80.800  \n- c. €   94.200  \n- d. € 107.000  \n8. Besluitvorming doet zich op verschillende niveaus voor in organisaties. Een algemeen gehanteerd onderscheid is strategische, tactische en operationele besluitvorming. Welke van de volgende stellingen is / zijn juist:",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998912+00:00",
+        "Header 1": "Page 17",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 32
+    },
+    {
+      "id": "chunk_62f98c4a105ddb0b",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- A. Verandering van een functionele in een marktgerichte organisatiestructuur is een uiting van strategische besluitvorming.  \n- B. Het bepalen van de machines benodigd voor productie is een vorm van tactische besluitvorming.  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist  \n- d. A. en B. zijn onjuist  \n17  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998920+00:00",
+        "Header 1": "Page 17",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 33
+    },
+    {
+      "id": "chunk_2e33f0e6cbb3cc53",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "9. U bent op de Grote Markt in Groningen begonnen met het bakken en verkopen van één soort stroopwafels. Om de verkoop te stimuleren neemt u twee collegastudenten in dienst: de een loopt met reclameborden omspannen door de Herestraat op en neer, de ander over de Vismarkt. U hebt beide studenten laten kiezen uit de volgende beloningssystemen: een beloning van 5% van de totale verkoopopbrengst op een dag of een beloning van € 10 per gelopen uur. De ene student kiest voor het percentage, de ander voor het uurloon. Deze beloningen vormen voor u de verkoopkosten van uw onderneming.  \nWelke van de volgende stellingen is / zijn juist:  \n- A. De totale verkoopkosten zijn aan te merken als gemengde kosten.  \n- B. De totale verkoopkosten zijn aan te merken als directe kosten.  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist d. A. en B. zijn onjuist",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998928+00:00",
+        "Header 1": "Page 18",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 34
+    },
+    {
+      "id": "chunk_c0f3dad22ad333f8",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- B. De totale verkoopkosten zijn aan te merken als directe kosten.  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist d. A. en B. zijn onjuist  \n10. Een ondernemer is het gedoe over directe versus indirecte en variabele versus constante kosten zo zat, dat hij besluit nog slechts één product te fabriceren en te verkopen. Als gevolg hiervan  \n- A. veranderen de variabele indirecte kosten in variabele directe kosten  \n- B. veranderen de constante indirecte kosten in constante directe kosten  \n- a. A. en B. zijn juist  \n- b. A. is juist, B. is onjuist  \n- c. A. is onjuist, B. is juist d. A. en B. zijn onjuist  \n18  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998936+00:00",
+        "Header 1": "Page 18",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 35
+    },
+    {
+      "id": "chunk_3941e48b1a0ff1d5",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "11. In de maand maart beschikt u over de volgende gegevens:  \nU bakt en verkoopt stroopwafels en hamburgers op de Grote Markt. Daarvoor gebruikt u € 0,30 stroop per stroopwafel en € 0,40 gehakt per hamburger.  \nVerder beschikt u over een bakplaat waarop u elke maand € 350 afschrijft. U neemt het niet zo nauw met de hygiëne (en uw klanten trouwens ook niet) en u bakt stroopwafels en hamburgers vrolijk door elkaar, naast elkaar, waar maar een plekje is op de bakplaat.  \nNaarmate u meer bakt, verbruikt u meer bakboter. In de maand maart bedroegen de kosten van boter € 50.  \nTenslotte heeft u nog een student met reclameborden in het centrum rondlopen, welke u 10% betaalt van de omzet van stroopwafels en hamburgers.  \nU bakte en verkocht in maart 3.000 stroopwafels voor € 1,00 en 4.000 hamburgers, ook voor € 1,00 (totale omzet dus € 7.000).  \nWat u bakt, verkoopt u direct. U heeft dus geen begin- of eindvoorraden.",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.998978+00:00",
+        "Header 1": "Page 19",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 36
+    },
+    {
+      "id": "chunk_cd94a99a7998d368",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "Wat u bakt, verkoopt u direct. U heeft dus geen begin- of eindvoorraden.  \nElk van de genoemde kostensoorten kunt u onderbrengen in onderstaande kwadrant waar het gaat om het karakter van de kosten:  \n**==> picture [287 x 151] intentionally omitted <==**  \n**----- Start of picture text -----**<br>\ndirect  indirect<br>variabel<br>constant<br>**----- End of picture text -----**<br>  \nIn de maand april voert u de volgende veranderingen door:  \n- De 4.000 hamburgers produceert en verkoopt u niet langer. Die vervangt u door 4.000 stroopwafels, zodat de productie en verkoop daarvan 7.000 stuks is.  \n- U betaalt de student met reclameborden niet langer 10% van de omzet, maar u betaalt hem € 8,00 per uur voor 70 uur rondlopen in het centrum in de maand april.  \nDe volgende kostensoorten onderscheidend,  \n- stroop  \n- bakboter  \n- afschrijvingskosten bakplaat  \n- verkoopkosten (studentloon)",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.999015+00:00",
+        "Header 1": "Page 19",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 37
+    },
+    {
+      "id": "chunk_fbcc5d29fb4d791e",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "De volgende kostensoorten onderscheidend,  \n- stroop  \n- bakboter  \n- afschrijvingskosten bakplaat  \n- verkoopkosten (studentloon)  \nhoeveel van die kostensoorten zullen dan van kwadrant verschuiven in april ten opzichte van maart (let op: het gaat dus niet om de omvang van de kosten, maar in welk kwadrant ze (komen te) staan):  \n- a.  \n- b. c.  \n- d.  \n19  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.999091+00:00",
+        "Header 1": "Page 19",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 38
+    },
+    {
+      "id": "chunk_586d01b103a90810",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "12. Een ondernemer heeft bij de aanschaf van een machine ook geïnvesteerd in capaciteit die hij niet benut voor zijn normale productie en ook niet benut voor het opvangen van seizoenpieken. De betreffende capaciteit heeft namelijk betrekking op (I) reservecapaciteit, benodigd voor het verrichten van het noodzakelijke onderhoud van de machine en (II) capaciteit als gevolg van technische ondeelbaarheid.  \nWelke kosten dienen te worden opgenomen in de integrale standaardkostprijs?  \n- a. Zowel de kosten van capaciteit (I) als (II)  \n- b. Wel de kosten van capaciteit (I), niet die van (II)  \n- c. Niet de kosten van capaciteit (I), wel die van (II)  \n- d. Niet de kosten van capaciteit (I) en niet die van (II)  \n13. Een onderneming moet btw (belasting toegevoegde waarde, ook vaak aangeduid als omzetbelasting) in rekening brengen bij de verkoop van haar producten. Voor hoeveel van de onderstaande genoemde belastingen geldt dat die voor de onderneming kostprijsverhogend zijn?",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.999128+00:00",
+        "Header 1": "Page 20",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 39
+    },
+    {
+      "id": "chunk_637960682f397d35",
+      "document_id": "doc_4ba760e4554b22c1",
+      "text": "- belasting toegevoegde waarde  \n- onroerendezaakbelasting  \n- winstbelasting  \n- a.  \n- b.  \n- c.  \n- d.  \n14. Welke van de onderstaande beweringen is juist:  \n- a. Als een machine lineair wordt afgeschreven, dan kan de financiering van de machine op geen enkele andere wijze plaatsvinden dan volgens een lineaire lening.  \n- b. In geval van een annuïtaire lening neemt het aflossingsbestanddeel in de annuïteit in de loop der tijd toe, terwijl de interestcomponent in gelijke mate afneemt.  \n- c. De keus voor een afschrijvingsmethode waarbij jaarlijks een vast percentage van de boekwaarde wordt afgeschreven is met name van toepassing als de waardedaling van het actief gelijkmatig over de levensduur plaatsvindt.  \n- d. Als een machine met eigen vermogen wordt gefinancierd is het niet noodzakelijk er op af te schrijven.  \n20  \n_Opgaven_ _**deel I** bij leerboek ‘Verkenningen in Management Accounting’ – copyright dr. B. Crom Rijksuniversiteit Groningen_",
+      "metadata": {
+        "chunk_strategy": "langchain_markdown_header",
+        "headers_to_split_on": [
+          [
+            "#",
+            "Header 1"
+          ],
+          [
+            "##",
+            "Header 2"
+          ],
+          [
+            "###",
+            "Header 3"
+          ]
+        ],
+        "chunk_size": 1000,
+        "chunk_overlap": 200,
+        "created_at": "2026-06-09T14:49:53.999145+00:00",
+        "Header 1": "Page 20",
+        "page_count": 20,
+        "title": "CASUS ARBEIDSPRODUCTIVITEIT",
+        "author": "Crom",
+        "subject": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20260415090039+02'00'",
+        "modDate": "D:20260415090039+02'00'",
+        "processing_timestamp": "2026-06-09T14:49:53.991303+00:00",
+        "processor_version": "pymupdf4llm",
+        "extraction_method": "page-by-page",
+        "source_filename": "deel I - vragen1.pdf",
+        "source_directory": "c:\\Users\\Florian\\Documents\\Coding Projects\\Uni\\Management Accounting",
+        "total_pages": 20
+      },
+      "page_number": null,
+      "chunk_index": 40
+    }
+  ]
+}

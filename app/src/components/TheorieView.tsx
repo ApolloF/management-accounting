@@ -1,6 +1,7 @@
 import type { Deel } from '../types'
 import { Button, Card } from './ui'
 import { Prose } from './Prose'
+import { BreakEvenDiagram } from './diagrams/BreakEvenDiagram'
 
 export function TheorieView({
   deel,
@@ -29,6 +30,8 @@ export function TheorieView({
           {sectie.formules && sectie.formules.length > 0 && (
             <div className="formule-box">{sectie.formules.join('\n')}</div>
           )}
+
+          {sectie.diagram === 'breakeven' && <BreakEvenDiagram />}
 
           {sectie.voorbeelden?.map((vb, j) => (
             <details className="voorbeeld" key={j}>

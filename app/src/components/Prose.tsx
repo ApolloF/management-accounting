@@ -4,8 +4,9 @@ import type { ReactNode } from 'react'
 // newline = nieuwe alinea. Geen externe dependency nodig.
 function inline(text: string): ReactNode[] {
   const nodes: ReactNode[] = []
-  // Split op **bold** en `code`
-  const re = /(\*\*[^*]+\*\*|`[^`]+`)/g
+  // Split op **vet**, *cursief* en `code`. Volgorde in de regex: eerst ** (anders
+  // pakt de *-regel de eerste twee sterren), dan losse *…*, dan `code`.
+  const re = /(\*\*[^*]+\*\*|\*[^*\n]+\*|`[^`]+`)/g
   let last = 0
   let m: RegExpExecArray | null
   let key = 0
@@ -13,6 +14,7 @@ function inline(text: string): ReactNode[] {
     if (m.index > last) nodes.push(text.slice(last, m.index))
     const tok = m[0]
     if (tok.startsWith('**')) nodes.push(<strong key={key++}>{tok.slice(2, -2)}</strong>)
+    else if (tok.startsWith('*')) nodes.push(<em key={key++}>{tok.slice(1, -1)}</em>)
     else nodes.push(<code key={key++}>{tok.slice(1, -1)}</code>)
     last = m.index + tok.length
   }

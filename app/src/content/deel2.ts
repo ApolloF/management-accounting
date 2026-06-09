@@ -42,12 +42,14 @@ export const deel2: Deel = {
       ],
     },
     {
-      titel: 'Break-even & dekkingsbijdrage',
+      titel: 'Break-even & indifferentiepunt',
+      diagram: 'breakeven',
       uitleg:
-        '**Dekkingsbijdrage per stuk** = verkoopprijs − variabele kosten p.e. Het **break-evenpunt** is de afzet waarbij de totale dekkingsbijdrage precies de constante kosten dekt:\n\n`Break-even afzet = totale constante kosten ÷ (verkoopprijs − variabele kosten p.e.)`',
+        '**Dekkingsbijdrage per stuk** = verkoopprijs − variabele kosten p.e. Het **break-evenpunt** is de afzet waarbij de totale dekkingsbijdrage precies de constante kosten dekt:\n\n`Break-even afzet = totale constante kosten ÷ (verkoopprijs − variabele kosten p.e.)`\n\n**Indifferentiepunt** — bij twee productiemethoden (*arbeidsintensief* = lage constante, hoge variabele kosten; *kapitaalintensief* = hoge constante, lage variabele kosten) snijden de kostenlijnen elkaar in het **indifferentiepunt**: de afzet waarbij beide methoden even duur zijn. Links daarvan is arbeidsintensief goedkoper, rechts kapitaalintensief.\n\n`Indifferentiepunt = (CF_kapitaal − CF_arbeid) ÷ (vc_arbeid − vc_kapitaal)`\n\nLigt het break-evenpunt van de kapitaalintensieve methode *rechts* van (hoger dan) het indifferentiepunt, dan ligt het break-evenpunt van de arbeidsintensieve méthode nóg verder rechts. **Speel met de schuifregelaars hieronder** om dit te zien.',
       formules: [
         'Dekkingsbijdrage p.e. = verkoopprijs − variabele kosten p.e.',
         'Break-even afzet = constante kosten ÷ dekkingsbijdrage p.e.',
+        'Indifferentiepunt = (CF_kapitaal − CF_arbeid) ÷ (vc_arbeid − vc_kapitaal)',
         'Verkoopprijs (via VKC) = (perioderesultaat + constante kosten + variabele kosten verkopen) ÷ verkochte aantallen',
       ],
       voorbeelden: [

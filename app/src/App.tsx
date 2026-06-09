@@ -4,6 +4,7 @@ import { Dashboard } from './components/Dashboard'
 import { TheorieView } from './components/TheorieView'
 import { QuizView } from './components/QuizView'
 import { ResultatenView } from './components/ResultatenView'
+import { ExamenModus } from './components/ExamenModus'
 import { deelByNr } from './content'
 
 type View =
@@ -11,6 +12,7 @@ type View =
   | { naam: 'theorie'; deel: number }
   | { naam: 'quiz'; deel: number }
   | { naam: 'resultaten' }
+  | { naam: 'examen' }
 
 export default function App() {
   const progress = useProgress()
@@ -44,8 +46,11 @@ export default function App() {
             progress={progress}
             onOpenDeel={(nr) => setView({ naam: 'theorie', deel: nr })}
             onResultaten={() => setView({ naam: 'resultaten' })}
+            onExamen={() => setView({ naam: 'examen' })}
           />
         )}
+
+        {view.naam === 'examen' && <ExamenModus onTerug={() => setView({ naam: 'dashboard' })} />}
 
         {view.naam === 'theorie' && huidigDeel && (
           <TheorieView

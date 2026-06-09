@@ -20,10 +20,12 @@ export function Dashboard({
   progress,
   onOpenDeel,
   onResultaten,
+  onExamen,
 }: {
   progress: ProgressApi
   onOpenDeel: (nr: number) => void
   onResultaten: () => void
+  onExamen: () => void
 }) {
   const tot = totaalGoed(progress.state)
 
@@ -53,6 +55,7 @@ export function Dashboard({
           </div>
         </div>
         <div className="row mt-4">
+          <Button onClick={onExamen}>🎓 Oefen-examen starten (2 uur)</Button>
           <Button variant="secondary" onClick={onResultaten}>
             Bekijk mijn voortgang & focus-advies
           </Button>

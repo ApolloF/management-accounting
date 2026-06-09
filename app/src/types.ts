@@ -2,6 +2,15 @@
 
 export type Bron = 'pdf' | 'zelfgemaakt'
 
+// Herkomst van de vraag — voor het bron/jaar-filter.
+export type BronCategorie =
+  | 'formatief'
+  | 'tentamen-2025'
+  | 'hertentamen-2024'
+  | 'tentamen-2023'
+  | 'deel-oefen'
+  | 'zelfgemaakt'
+
 export type Difficulty = 'makkelijk' | 'gemiddeld' | 'lastig' | 'berucht'
 
 export interface MCOptie {
@@ -20,6 +29,7 @@ export interface Vraag {
   uitleg: string // volledige uitwerking / waarom dit antwoord juist is
   hints: string[] // 1-3 oplopende hints
   bron: Bron
+  bronCategorie?: BronCategorie // herkomst voor het filter (wordt automatisch afgeleid indien leeg)
   bronLabel?: string // bv. "Formatieve toets vr.18" of "Tentamen 12-6-2025 (53% goed)"
   difficulty?: Difficulty
   scorePct?: number // % studenten dat de echte vraag goed had (indien bekend)
@@ -37,6 +47,7 @@ export interface TheorieSectie {
   uitleg: string // markdown-light (kopjes via **bold**, lijsten via '- ')
   formules?: string[]
   voorbeelden?: Voorbeeld[]
+  diagram?: 'breakeven' // optioneel interactief diagram onder de sectie
 }
 
 export interface Deel {

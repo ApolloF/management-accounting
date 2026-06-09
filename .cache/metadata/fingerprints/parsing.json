@@ -1,0 +1,11 @@
+{
+  "fingerprint": "2be51dd71b045b8c3de3a733f4f3d643ed51ada5b7751c9320428b99e999aa2c",
+  "timestamp": "2026-06-09T14:49:41.267869+00:00",
+  "config_version": "1.0.0",
+  "config": {
+    "pdf_parser": "pymupdf4llm",
+    "unstructured_pdf_processing_strategy": "fast",
+    "marker_use_llm": false,
+    "marker_llm_model": "google/gemini-2.5-flash-lite"
+  }
+}

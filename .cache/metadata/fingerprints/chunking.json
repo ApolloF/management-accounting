@@ -1,0 +1,10 @@
+{
+  "fingerprint": "9ad09a3c293cb2d5caf136831513cc230f0977aa6c7c96e63c24763f08ce8950",
+  "timestamp": "2026-06-09T14:49:41.268445+00:00",
+  "config_version": "1.0.0",
+  "config": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "pdf_chunker": "langchain"
+  }
+}
