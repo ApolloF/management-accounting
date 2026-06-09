@@ -232,6 +232,28 @@ code, .mono { font-family: var(--font-mono); font-size: 0.92em; }
 .chip-on.chip-lastig { background: var(--c-diff-lastig); }
 .chip-on.chip-berucht { background: var(--c-diff-berucht); }
 
+/* ---- Kwadrant-diagram ---- */
+.kwadrant-grid { display: grid; grid-template-columns: 28px 1fr 1fr; grid-template-rows: 24px 1fr 1fr; gap: var(--sp-2); }
+.kwadrant-axis { display: flex; justify-content: space-around; font-size: var(--fs-xs); font-weight: var(--fw-bold); color: var(--c-text-faint); text-transform: uppercase; letter-spacing: 0.04em; }
+.kwadrant-axis-top { grid-column: 2 / 4; grid-row: 1; }
+.kwadrant-axis-left { grid-column: 1; grid-row: 2 / 4; flex-direction: column; align-items: center; justify-content: space-around; writing-mode: vertical-rl; transform: rotate(180deg); }
+.kwadrant-cel { border: 1.5px solid var(--c-border); border-radius: var(--r-md); padding: var(--sp-3); min-height: 80px; display: flex; flex-direction: column; gap: var(--sp-2); background: var(--c-surface-2); transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease); }
+.kwadrant-cel:nth-of-type(2) { grid-column: 2; grid-row: 2; }
+.kwadrant-cel:nth-of-type(3) { grid-column: 3; grid-row: 2; }
+.kwadrant-cel:nth-of-type(4) { grid-column: 2; grid-row: 3; }
+.kwadrant-cel:nth-of-type(5) { grid-column: 3; grid-row: 3; }
+.kwadrant-titel { font-size: var(--fs-xs); font-weight: var(--fw-bold); color: var(--c-text-faint); }
+.kwadrant-actief { background: var(--c-brand-soft); border-color: var(--c-brand); }
+.kwadrant-post { font-weight: var(--fw-semibold); color: var(--c-brand-text); animation: pop var(--dur) var(--ease); }
+
+/* ---- Verschillen-boom ---- */
+.boom { display: flex; flex-direction: column; gap: var(--sp-2); }
+.boom-box { display: inline-flex; align-items: center; gap: var(--sp-2); text-align: left; font-family: inherit; font-size: var(--fs-sm); font-weight: var(--fw-semibold); padding: var(--sp-2) var(--sp-3); border-radius: var(--r-sm); border: 1px solid var(--c-border); background: var(--c-surface-2); color: var(--c-text); cursor: pointer; transition: background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease); }
+.boom-box:hover { border-color: var(--c-brand); }
+.boom-actief { background: var(--c-brand); color: #fff; border-color: transparent; }
+.boom-tak { color: var(--c-text-faint); font-weight: 400; }
+.boom-node { display: flex; flex-direction: column; gap: var(--sp-2); }
+
 /* ---- Examen-modus ---- */
 .exam-timer { font-variant-numeric: tabular-nums; font-weight: var(--fw-bold); font-size: var(--fs-lg); }
 .exam-timer.urgent { color: var(--c-danger); }

@@ -2,6 +2,9 @@ import type { Deel } from '../types'
 import { Button, Card } from './ui'
 import { Prose } from './Prose'
 import { BreakEvenDiagram } from './diagrams/BreakEvenDiagram'
+import { KwadrantDiagram } from './diagrams/KwadrantDiagram'
+import { PDCADiagram } from './diagrams/PDCADiagram'
+import { VerschillenBoom } from './diagrams/VerschillenBoom'
 
 export function TheorieView({
   deel,
@@ -32,6 +35,9 @@ export function TheorieView({
           )}
 
           {sectie.diagram === 'breakeven' && <BreakEvenDiagram />}
+          {sectie.diagram === 'kwadrant' && <KwadrantDiagram />}
+          {sectie.diagram === 'pdca' && <PDCADiagram />}
+          {sectie.diagram === 'verschillen' && <VerschillenBoom />}
 
           {sectie.voorbeelden?.map((vb, j) => (
             <details className="voorbeeld" key={j}>

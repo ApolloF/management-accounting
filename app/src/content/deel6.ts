@@ -35,6 +35,7 @@ export const deel6: Deel = {
     },
     {
       titel: 'Het volledige verschillenoverzicht',
+      diagram: 'verschillen',
       uitleg:
         'De som van de zes verschillen (verkoopprijs-, verkoopomvang-, prijs- en efficiencyverschil grondstof, prijs- en efficiencyverschil arbeid + bezettingsresultaat) hoeft niet exact gelijk te zijn aan het verschil tussen begroot en werkelijk totaalsaldo. Het ontbrekende stuk is meestal het **voorraadresultaat eindproducten**: het verschil tussen begrote en werkelijk geproduceerde voorraad.\n\n**Welke resultaten zitten in de productiesfeer en welke in de verkoopsfeer?**\n- Productiesfeer: bezettingsresultaat, prijs- en efficiencyverschillen op grondstof/manuren. → Veranderen *niet* door een wijziging in de verkopen.\n- Verkoopsfeer: transactieresultaat, verkoopprijs- en verkoopomvangverschil. → Veranderen *wel* bij meer/minder verkopen.\n\nHet **totale resultaat op de constante kosten** = prijsverschil constante kosten + bezettingsresultaat. Verhoog je begrote én werkelijke constante kosten met hetzelfde bedrag, dan blijft het prijsverschil gelijk maar wordt het bezettingsresultaat gunstiger (hogere constante kosten p.e. × meer-dan-normale productie).',
     },

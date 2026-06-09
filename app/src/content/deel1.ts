@@ -9,11 +9,13 @@ export const deel1: Deel = {
   theorie: [
     {
       titel: 'Management accounting & control',
+      diagram: 'pdca',
       uitleg:
         '**Management accounting** levert financieel-economische informatie voor het *sturen* (plannen) en *beheersen* van een organisatie. **Management control** is de cyclus van: plan opstellen → realiseren → realisatie vergelijken met plan → verschillen bepalen en analyseren → actie ondernemen.\n\n**Belangrijke stelling:** *planning kan zonder beheersing, maar beheersing kan niet zonder planning.* Je kunt een plan maken zonder er ooit op terug te komen, maar beheersen betekent realisatie vergelijken met het plan — dat vereist dus een plan.\n\n**Besluitvormingsniveaus** (typologie uit het leerboek):\n- **Strategisch** — lange termijn, vooral product-marktcombinaties (bv. nieuwe markt betreden, aandelenkapitaal uitbreiden, investeren in bedrijfspand).\n- **Tactisch** — middellange termijn, inrichting van de organisatie (bv. marketingcampagne ontwikkelen, organisatiestructuur inrichten).\n- **Operationeel** — korte termijn, verkoop- en productieplannen.\n\n**True costing:** voorstanders willen dat *alle* gemaakte kosten worden doorberekend in de kostprijs, óók maatschappelijke kosten (bv. vervuiling). Ze zijn níet tegen normatieve kostprijzen — die mogen ook genormeerd worden.',
     },
     {
       titel: 'Kostensoorten en de kostprijs-kwadranten',
+      diagram: 'kwadrant',
       uitleg:
         'Kosten worden langs twee assen ingedeeld:\n\n**1. Direct vs. indirect** — is er een *direct aanwijsbaar verband* tussen de kostenpost en het product?\n- **Direct**: toewijsbaar aan één product (grondstof per hamburger, provisie over de omzet van een productgroep).\n- **Indirect**: geen direct verband (afschrijving bakplaat die voor meerdere producten dient). Een verdeelsleutel bedenken maakt indirecte kosten *niet* direct — ze blijven indirect.\n\n**2. Variabel vs. constant** — verandert de kostenpost mee met de productie-/verkoopomvang?\n- **Variabel**: stijgt met de omvang (grondstof, bakboter, omzetafhankelijke provisie).\n- **Constant**: vast per periode ongeacht omvang (afschrijving, tijdloon).\n\nDit geeft vier kwadranten (II = direct+variabel, I = indirect+variabel, III = direct+constant, IV = indirect+constant).\n\n**Variabel verloop:** proportioneel (recht evenredig), progressief (stijgt sneller dan omvang), degressief (stijgt langzamer).\n\n**Beloningsstelsels:** stukloon = variabel; tijdloon = constant. Een **premieloonstelsel** combineert beide → het tijdloon-deel zijn constante (en meestal indirecte) kosten.',
       formules: [
@@ -34,6 +36,12 @@ export const deel1: Deel = {
           antwoord: 'Kwadrant II = €1.000 + €625 + €855 = €2.480',
         },
       ],
+    },
+    {
+      titel: 'Beloningsstelsels',
+      uitleg:
+        'Hoe je personeel beloont bepaalt het karakter van de loonkosten:\n- **Stukloon** — vast bedrag per geleverde prestatie/stuk → **variabel**.\n- **Tijdloon** — vast bedrag per gewerkt uur, los van output → **constant**.\n- **Premieloonstelsel** — combinatie van tijdloon (constant deel) + stukloon (variabel deel).\n- **Winstdelingsstelsel** — beloning als percentage van de winst.\n\nDe **arbeidsproductiviteit** = aantal prestaties ÷ ingezette werkeenheden (bv. geslaagde studenten per bestede uren, of producten per uur). Het uurloon heeft *geen* invloed op de arbeidsproductiviteit; om een verandering in productiviteit te bepalen heb je alleen output en werkeenheden nodig.',
+      formules: ['Arbeidsproductiviteit = aantal prestaties ÷ ingezette werkeenheden'],
     },
     {
       titel: 'Balans, resultaat en belastingen',

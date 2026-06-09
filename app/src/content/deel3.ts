@@ -8,6 +8,14 @@ export const deel3: Deel = {
     'Budgetten, en het ontleden van verschillen tussen budget/norm en realisatie: prijs- en efficiencyverschillen, verkoopprijs- en verkoopomvangverschil.',
   theorie: [
     {
+      titel: 'Budgetten en budgettypen',
+      uitleg:
+        'Een **budget** koppelt beschikbare middelen aan prestaties/activiteiten — het is méér dan "een zak geld". De vorm hangt af van hoe de kosten met het productievolume meebewegen:\n- **Vast (star) budget** — één begroting bij één geplande omvang.\n- **Variabel budget** — alleen variabele kosten, evenredig met de omvang.\n- **Gemengd budget** — combinatie van *constante* en *proportioneel variabele* kosten. (Of de kosten direct of indirect zijn doet er niet toe; het gaat om hoe ze met het volume variëren.)\n- **Flexibel budget** — nodig wanneer de variabele kosten *niet* proportioneel zijn (degressief of progressief variabel): het budget past zich aan het werkelijke volume aan.\n\n**Ex-ante vs. ex-post budget:** het *ex-ante* budget is vooraf opgesteld (begrote output). Het *ex-post* (toegestane) budget herrekent op basis van de **werkelijke output**, maar tegen standaardverbruik en standaardprijs. Het verschil ex-ante↔ex-post is het *bezettings-/volumeverschil*; ex-post↔werkelijk zijn de prijs- en efficiencyverschillen.',
+      formules: [
+        'Ex-post (toegestaan) budget = werkelijke output × standaardverbruik × standaardprijs',
+      ],
+    },
+    {
       titel: 'Verschillen ontleden: prijs- en efficiencyverschil',
       uitleg:
         'Het totale verschil op een variabele kostenpost (grondstof of manuren) splits je in een **prijsverschil** en een **efficiencyverschil** (hoeveelheidsverschil).\n\n**Prijsverschil** = (standaardprijs − werkelijke prijs) × werkelijke hoeveelheid\n`PV = (PS − PW) × HW`\n\n**Efficiencyverschil** = (standaardhoeveelheid − werkelijke hoeveelheid) × standaardprijs\n`EV = (HS − HW) × PS`\n\nEen *negatief* (nadelig) verschil betekent dat de werkelijke kosten hoger zijn dan standaard. Let bij manuren op: de werkelijke hoeveelheid uren = werkelijke productie × werkelijke manuren per product.',

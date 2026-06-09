@@ -36,6 +36,20 @@ export const deel5: Deel = {
       ],
     },
     {
+      titel: 'ROI-decompositie & residual income',
+      uitleg:
+        'De **ROI** kun je ontleden (DuPont):\n\n`ROI = winstmarge × omloopsnelheid`\n\nwaarbij winstmarge = winst/omzet en omloopsnelheid = omzet/geïnvesteerd vermogen. Twee divisies met dezelfde ROI kunnen dus een heel andere marge/omloop-mix hebben.\n\n**ROI vs. RI bij sturing:** stuur je op **ROI**, dan kan een divisie een op zichzelf rendabele investering (boven de vermogenskosten, maar onder de huidige divisie-ROI) afwijzen omdat die de ROI "verwatert". **RI** (absoluut: winst − vereist rendement × vermogen) heeft dat nadeel niet: elke investering die meer dan het vereiste rendement oplevert, verhoogt het RI. Let op: een verandering in het vereiste rendement werkt **per divisie verschillend** door in het RI (RI is absoluut, ROI relatief).',
+      formules: [
+        'ROI = winstmarge × omloopsnelheid = (winst/omzet) × (omzet/vermogen)',
+        'RI = winst − (vereist rendement × geïnvesteerd vermogen)',
+      ],
+    },
+    {
+      titel: 'Balanced scorecard & rapportage',
+      uitleg:
+        'De **balanced scorecard (BSC)** stuurt op **vier samenhangende perspectieven** (financieel, klant, interne processen, leren & groei) die samen de *strategie* communiceren en bewaken. "Balanced" = evenwichtige aandacht tussen **lange- en kortetermijndoelen**, **interne en externe** gebieden en **financiële en niet-financiële** maatstaven — niet dat het financiële perspectief evenveel weegt als de andere drie samen.\n\nTer vergelijking: het **INK-/EFQM-model** werkt met **negen aandachtsgebieden** over de organisatie en haar resultaten.\n\n**Niet-financiële indicatoren** opnemen is zinvol omdat ze ontwikkelingen *vroegtijdig* signaleren (langetermijnperspectief), terwijl financiële indicatoren vooral achteraf uitsluitsel geven over de korte termijn. Een **prestatie-indicator (KPI)** meet in welke mate een **kritische succesfactor (KSF)** wordt gerealiseerd.',
+    },
+    {
       titel: 'Kritische succesfactoren & prestatie-indicatoren',
       uitleg:
         'Een **kritische succesfactor (KSF)** is een factor die bepalend is voor het succes/voortbestaan van de organisatie (bv. de *mate van scholing* als maat voor innovatievermogen). Een **prestatie-indicator (PI)** is een meeteenheid die aangeeft in welke mate een KSF wordt gerealiseerd, meestal als absoluut getal of percentage (bv. *scholingskosten als % van de omzet*).',

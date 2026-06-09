@@ -47,7 +47,7 @@ export interface TheorieSectie {
   uitleg: string // markdown-light (kopjes via **bold**, lijsten via '- ')
   formules?: string[]
   voorbeelden?: Voorbeeld[]
-  diagram?: 'breakeven' // optioneel interactief diagram onder de sectie
+  diagram?: 'breakeven' | 'kwadrant' | 'pdca' | 'verschillen' // optioneel interactief diagram
 }
 
 export interface Deel {
