@@ -20,9 +20,7 @@ export function TheorieView({
       <button className="crumb" onClick={onTerug} style={{ marginBottom: 8 }}>
         ← Alle delen
       </button>
-      <h2>
-        Deel {romein(deel.nr)} — {deel.titel}
-      </h2>
+      <h2>{deel.nr === 8 ? deel.titel : `Deel ${romein(deel.nr)} — ${deel.titel}`}</h2>
       <p className="muted">{deel.hoofdstukken}</p>
 
       {deel.theorie.map((sectie, i) => (

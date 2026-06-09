@@ -28,6 +28,19 @@ export function Prose({ text }: { text: string }) {
     <div className="prose">
       {blocks.map((block, i) => {
         const lines = block.split('\n')
+        const isCallout = lines.every((l) => l.trim().startsWith('>'))
+        if (isCallout) {
+          return (
+            <p key={i} className="callout">
+              {lines.map((l, j) => (
+                <span key={j}>
+                  {inline(l.trim().replace(/^>\s?/, ''))}
+                  {j < lines.length - 1 && <br />}
+                </span>
+              ))}
+            </p>
+          )
+        }
         const isList = lines.every((l) => l.trim().startsWith('- '))
         if (isList) {
           return (

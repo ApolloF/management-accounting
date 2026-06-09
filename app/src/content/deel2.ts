@@ -31,13 +31,13 @@ export const deel2: Deel = {
           casus:
             'Planken €5.000. 10% afval bij verwerken. Daarna 10% van de tafels afgekeurd (uitval). Afval/uitval hebben geen waarde; waardering tegen werkelijke kosten. Welk deel R gaat rechtstreeks naar de resultatenrekening, welk deel B naar de balans?',
           stappen: [
-            'Als afval/uitval geheel VERMIJDBAAR zijn → maximaal naar resultatenrekening: 10% afval = €500 naar R; daarna tafels waard €4.500, 10% uitval = €450 naar R. Samen €950 naar R.',
-            'Als alle afval ONVERMIJDBAAR is → vóór keuring zijn de producten €5.000 waard; max 10% uitval (€500) naar R, dus €4.500 naar de balans (B).',
-            'Stelling A (R ligt tussen €0 en €1.000): onjuist — max is €950, maar de bovengrens €1.000 is te ruim/onnauwkeurig gesteld.',
-            'Stelling B (als B = €4.500, kan uitval geheel vermijdbaar zijn): onjuist — B = €4.500 hoort bij het scenario waarin afval onvermijdbaar is.',
+            'Vermijdbare afval/uitval = verspilling → rechtstreeks naar de resultatenrekening (R). Onvermijdbaar → in de kostprijs van het eindproduct (balans, B).',
+            'Maximum voor R (alles vermijdbaar): 10% afval = €500 naar R; de tafels zijn vóór keuring dan €4.500 waard, 10% uitval = €450 naar R. Samen maximaal €950.',
+            'Stelling A ("R ligt tussen €0 en €1.000"): onjuist — het maximum is €950, niet €1.000. (De uitval wordt berekend over €4.500, niet over €5.000.)',
+            'Stelling B ("als B = €4.500 kan de uitval geheel vermijdbaar zijn"): juist — neem afval geheel onvermijdbaar (blijft in de kostprijs; producten vóór keuring €5.000 waard) en uitval geheel vermijdbaar: 10% × €5.000 = €500 naar R → B = €4.500.',
           ],
           antwoord:
-            'In de tentamenvraag: A onjuist, B onjuist → antwoord c. (A onjuist, B juist) was het officiële antwoord; kern is het onderscheid vermijdbaar (→R) vs. onvermijdbaar (→kostprijs/B).',
+            'A onjuist, B juist (antwoord c). Kern: vermijdbaar → resultatenrekening; onvermijdbaar → kostprijs/balans — en reken de uitval over de waarde ná de afvalstap.',
         },
       ],
     },
@@ -82,7 +82,7 @@ export const deel2: Deel = {
       ],
       juistAntwoord: 'c',
       uitleg:
-        'Antwoord c. Vermijdbare afval/uitval = verspilling → naar resultatenrekening. Geheel vermijdbaar: max €500 (afval) + €450 (uitval op €4.500) = €950 naar R. Geheel onvermijdbaar: max €500 uitval naar R, €4.500 naar de balans (B). B=€4.500 hoort dus juist bij onvermijdbaar afval, niet bij geheel vermijdbare uitval — let goed op de exacte formulering van de officiële uitwerking.',
+        'Antwoord c (A onjuist, B juist). A: als afval én uitval geheel vermijdbaar zijn gaat maximaal €500 (afval) + €450 (10% uitval over de resterende €4.500) = €950 naar R — de bovengrens van €1.000 klopt dus niet → A onjuist. B: stel afval geheel onvermijdbaar (blijft in de kostprijs; producten vóór keuring €5.000 waard) en de uitval geheel vermijdbaar: dan gaat 10% × €5.000 = €500 als uitval naar R en blijft B = €4.500 op de balans → B juist.',
       hints: [
         'Splits in twee scenario’s: alles vermijdbaar vs. alles onvermijdbaar.',
         'Vermijdbaar → resultatenrekening. Onvermijdbaar → kostprijs eindproduct (balans).',

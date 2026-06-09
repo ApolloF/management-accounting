@@ -8,6 +8,11 @@ import { deel6 } from './deel6'
 import { deel7 } from './deel7'
 import { zelfgemaakteVragen } from './zelfgemaakt'
 import { extraVragen } from './extraVragen'
+import { boekhouden } from './boekhouden'
+
+// Apart "deel" voor het open-vraag gedeelte (fabricageboekhouding). Telt NIET
+// mee in de MC-gewichten en de examen-modus; heeft een eigen flow.
+export { boekhouden }
 
 const ruweDelen: Deel[] = [deel1, deel2, deel3, deel4, deel5, deel6, deel7]
 
@@ -113,6 +118,7 @@ export function zichtbareVragen(d: Deel, filter: VraagFilter): Vraag[] {
 }
 
 export function deelByNr(nr: number): Deel | undefined {
+  if (nr === boekhouden.nr) return boekhouden
   return ruweDelen.find((d) => d.nr === nr)
 }
 

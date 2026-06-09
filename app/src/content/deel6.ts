@@ -120,7 +120,9 @@ export const deel6: Deel = {
       id: 'd6-rekeningen-balans',
       deel: 6,
       type: 'mc',
-      stam: 'Hoeveel van de rekeningen in het schema (040 EV, 120 Bank, 130 Debiteuren, 180 Te vorderen OB, 181 Te betalen OB, 300 Voorraad grondstoffen, 400/420/430 kosten, 560/580 indirecte kosten, 600-612 verbruik, 700 Voorraad gereed product, 710 Voorraad goederen in bewerking, 800-840, 900-999 resultaten...) horen thuis op de balans?',
+      stam: 'Een aantal van de rekeningen in het schema komt uiteindelijk op de resultatenrekening terecht en een aantal op de balans. Hoeveel van deze rekeningen horen thuis op de balans?',
+      context:
+        'Rekeningschema fabricageboekhouding:\n040 Eigen vermogen · 120 Rabobank · 130 Debiteuren · 180 Te vorderen OB · 181 Te betalen OB · 300 Voorraad grondstoffen · 400 Directe grondstofkosten · 420 Directe personeelskosten · 430 Indirecte loonkosten · 460 Leasekosten · 495 Diverse kosten · 499 Overboekingsrekening · 560 Indirecte fabricagekosten · 565 Opslag indirecte fabricagekosten · 580 Indirecte verkoopkosten · 585 Opslag indirecte verkoopkosten · 599 Overboekingsrekening · 600 Verbruik grondstoffen · 601 Directe personeelskosten · 602 Toeslag indirecte fabricagekosten · 610 Standaard verbruik grondstoffen · 611 Standaard directe personeelskosten · 612 Standaard toeslag indirecte fabricagekosten · 699 Overboekingsrekening · 700 Voorraad gereed product · 710 Voorraad goederen in bewerking · 800 Fabricagekostprijs verkopen · 810 Directe verkoopkosten · 820 Toeslag indirecte verkoopkosten · 840 Opbrengst verkopen · 899 Overboekingsrekening · 900 Resultaat indirecte kosten · 920 Fabricageresultaat · 980 Verkoopresultaat · 950 Incidentele resultaten · 999 Overboekingsrekening',
       opties: [
         { id: 'a', tekst: '6 rekeningen' },
         { id: 'b', tekst: '7 rekeningen' },
@@ -167,7 +169,9 @@ export const deel6: Deel = {
       id: 'd6-verkoop-effect',
       deel: 6,
       type: 'mc',
-      stam: 'OneWayHome BV: in maand 2 exact dezelfde cijfers als maand 1, behalve de verkopen (120 i.p.v. 90 stuks). Hoeveel van deze resultaten/verschillen veranderen?\n• bezettingsresultaat • perioderesultaat • efficiencyverschil manuren • prijsverschil manuren',
+      stam: 'OneWayHome BV: in maand 2 worden exact dezelfde cijfers gerealiseerd als in maand 1, behalve de verkopen: 120 i.p.v. 90 stuks. Hoeveel van deze resultaten/verschillen veranderen daardoor?\n• bezettingsresultaat • perioderesultaat • efficiencyverschil manuren • prijsverschil manuren',
+      context:
+        'OneWayHome BV (waardering tegen integrale standaardkostprijs), maand 1 — Begroot (en normaal): productie 100, verkopen 100, verkoopprijs €22.500, 250 manuur/product, €45,00/manuur, constante productiekosten €750.000. Werkelijk: productie 120, verkopen 90, verkoopprijs €22.000, 260 manuur/product, €46,00/manuur, constante productiekosten €775.000.',
       opties: [
         { id: 'a', tekst: 'een' },
         { id: 'b', tekst: 'twee' },

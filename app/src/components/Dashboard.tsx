@@ -1,4 +1,4 @@
-import { delenOpGewicht, gewichten } from '../content'
+import { boekhouden, delenOpGewicht, gewichten } from '../content'
 import { Badge, Button, Card, DifficultyBadge, ProgressBar } from './ui'
 import type { ProgressApi } from '../hooks/useProgress'
 import { deelStats, totaalGoed } from '../lib/stats'
@@ -63,6 +63,44 @@ export function Dashboard({
       </section>
 
       <div className="deel-list">
+        {(() => {
+          const st = deelStats(boekhouden, progress.state)
+          return (
+            <Card interactive onClick={() => onOpenDeel(boekhouden.nr)}>
+              <div className="deel-card">
+                <div className="deel-rank">✍️</div>
+                <div className="deel-main">
+                  <h3>
+                    {boekhouden.titel}
+                    <Badge variant="brand">Schriftelijk deel</Badge>
+                  </h3>
+                  <div className="sub">
+                    {boekhouden.hoofdstukken} · {boekhouden.kernthema}
+                  </div>
+                  <div className="deel-meta">
+                    <Badge>{st.totaalPdf} open opgaven</Badge>
+                    <DifficultyBadge difficulty="berucht" />
+                  </div>
+                  <div className="deel-progress-row">
+                    <ProgressBar value={st.voortgangPct} />
+                    <span className="pct">
+                      {st.beantwoord}/{st.totaalPdf}
+                    </span>
+                  </div>
+                </div>
+                <div className="deel-weight">
+                  <span className="big">30%</span>
+                  <span className="lbl">tentamen-<br />gewicht</span>
+                </div>
+                <div className="deel-cta">
+                  <Button size="sm" onClick={() => onOpenDeel(boekhouden.nr)}>
+                    Start →
+                  </Button>
+                </div>
+              </div>
+            </Card>
+          )
+        })()}
         {delenOpGewicht.map((d, i) => {
           const st = deelStats(d, progress.state)
           const diff = deelDifficulty(d.nr)

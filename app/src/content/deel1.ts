@@ -17,7 +17,7 @@ export const deel1: Deel = {
       titel: 'Kostensoorten en de kostprijs-kwadranten',
       diagram: 'kwadrant',
       uitleg:
-        'Kosten worden langs twee assen ingedeeld:\n\n**1. Direct vs. indirect** — is er een *direct aanwijsbaar verband* tussen de kostenpost en het product?\n- **Direct**: toewijsbaar aan één product (grondstof per hamburger, provisie over de omzet van een productgroep).\n- **Indirect**: geen direct verband (afschrijving bakplaat die voor meerdere producten dient). Een verdeelsleutel bedenken maakt indirecte kosten *niet* direct — ze blijven indirect.\n\n**2. Variabel vs. constant** — verandert de kostenpost mee met de productie-/verkoopomvang?\n- **Variabel**: stijgt met de omvang (grondstof, bakboter, omzetafhankelijke provisie).\n- **Constant**: vast per periode ongeacht omvang (afschrijving, tijdloon).\n\nDit geeft vier kwadranten (II = direct+variabel, I = indirect+variabel, III = direct+constant, IV = indirect+constant).\n\n**Variabel verloop:** proportioneel (recht evenredig), progressief (stijgt sneller dan omvang), degressief (stijgt langzamer).\n\n**Beloningsstelsels:** stukloon = variabel; tijdloon = constant. Een **premieloonstelsel** combineert beide → het tijdloon-deel zijn constante (en meestal indirecte) kosten.',
+        'Kosten worden langs twee assen ingedeeld:\n\n**1. Direct vs. indirect** — is er een *direct aanwijsbaar verband* tussen de kostenpost en het product?\n- **Direct**: toewijsbaar aan één product (grondstof per hamburger, provisie over de omzet van een productgroep).\n- **Indirect**: geen direct verband (afschrijving bakplaat die voor meerdere producten dient). Een verdeelsleutel bedenken maakt indirecte kosten *niet* direct — ze blijven indirect.\n\n**2. Variabel vs. constant** — verandert de kostenpost mee met de productie-/verkoopomvang?\n- **Variabel**: stijgt met de omvang (grondstof, bakboter, omzetafhankelijke provisie).\n- **Constant**: vast per periode ongeacht omvang (afschrijving, tijdloon).\n\nDit geeft vier kwadranten (II = direct+variabel, I = indirect+variabel, III = direct+constant, IV = indirect+constant).\n\n> ⚠️ **Tentamenvalkuil — aantal productgroepen bepaalt direct/indirect:** bij **één** product(groep) zijn vrijwel alle kosten direct toewijsbaar (ook boter, ook loon). Komt er een **tweede** productgroep bij die door elkaar wordt geproduceerd, dan verschuiven gedeelde kosten (boter, loon dat van de totale opbrengst afhangt) naar **indirect** — en andersom: stop je met één van twee producten, dan worden ze weer direct. Omzet-afhankelijke provisie per productgroep (bv. 20% van de omzet) blijft wél direct, want de omzet per groep is bekend.\n\n**Variabel verloop:** proportioneel (recht evenredig), progressief (stijgt sneller dan omvang), degressief (stijgt langzamer).\n\n**Beloningsstelsels:** stukloon = variabel; tijdloon = constant. Een **premieloonstelsel** combineert beide → het tijdloon-deel zijn constante (en meestal indirecte) kosten.',
       formules: [
         'Kwadrant II (direct + variabel) = directe grondstofkosten + omzet-gerelateerde verkoopkosten',
       ],
@@ -42,6 +42,11 @@ export const deel1: Deel = {
       uitleg:
         'Hoe je personeel beloont bepaalt het karakter van de loonkosten:\n- **Stukloon** — vast bedrag per geleverde prestatie/stuk → **variabel**.\n- **Tijdloon** — vast bedrag per gewerkt uur, los van output → **constant**.\n- **Premieloonstelsel** — combinatie van tijdloon (constant deel) + stukloon (variabel deel).\n- **Winstdelingsstelsel** — beloning als percentage van de winst.\n\nDe **arbeidsproductiviteit** = aantal prestaties ÷ ingezette werkeenheden (bv. geslaagde studenten per bestede uren, of producten per uur). Het uurloon heeft *geen* invloed op de arbeidsproductiviteit; om een verandering in productiviteit te bepalen heb je alleen output en werkeenheden nodig.',
       formules: ['Arbeidsproductiviteit = aantal prestaties ÷ ingezette werkeenheden'],
+    },
+    {
+      titel: 'Grondstof, hulpstof, halffabricaat, eindproduct',
+      uitleg:
+        'Dezelfde stof kan meerdere rollen vervullen — kijk per gebruik:\n- **Grondstof** — gaat op in het product en vormt er de basis van (water in ranja).\n- **Hulpstof** — wordt bij het proces gebruikt maar is geen herkenbaar bestanddeel (water om glazen af te spoelen, bakboter).\n- **Halffabricaat** — het eindproduct van een productiefase én een te onderscheiden component van het eindproduct (een tussenproduct).\n- **Eindproduct** — wat aan de klant wordt geleverd (een glas water als consumptie).\n\n*Tentamenvoorbeeld:* kraanwater is eindproduct (glas water), grondstof (voor ranja) en hulpstof (afspoelen) — maar géén halffabricaat.',
     },
     {
       titel: 'Balans, resultaat en belastingen',
@@ -125,9 +130,9 @@ export const deel1: Deel = {
       id: 'd1-kostensoorten-april',
       deel: 1,
       type: 'mc',
-      stam: 'De directe variabele kosten in april zijn ... ten opzichte van maart?',
+      stam: 'De omvang van de directe variabele kosten is in april:',
       context:
-        'MAART: hamburgers, €0,70 gehakt/stuk (1). Bakplaat-afschrijving €200 (2). Bakboter €40 (3). Student: €10/uur × 45 uur = €450 reclame (4). 2.500 hamburgers à €1,20.\n\nAPRIL: nog 60% van het oorspronkelijke aantal hamburgers (1.500); de weggevallen 1.000 vervangen door 1.000 stroopwafels à €0,90, €0,35 stroop/stuk (5). Student krijgt nu 20% van de omzet van beide groepen i.p.v. uurloon. Boter wordt door elkaar gebakken (niet langer direct).',
+        'MAART — u bakt en verkoopt alléén hamburgers op de Vismarkt. €0,70 gehakt per hamburger (kostenpost 1). Bakplaat: €200 afschrijving per maand (kostenpost 2). Naarmate u meer bakt, verbruikt u meer bakboter; in maart €40 (kostenpost 3). Een student loopt met reclameborden: €10,00 per uur × 45 uur (kostenpost 4). U bakte en verkocht 2.500 hamburgers à €1,20. Geen begin- of eindvoorraden.\n\nAPRIL — u produceert/verkoopt nog 60% van het aantal hamburgers (1.500); het weggevallen aantal (1.000) vervangt u door evenveel stroopwafels à €0,90, met €0,35 stroop per stroopwafel (kostenpost 5). Hamburgers en stroopwafels worden vrolijk door elkaar gebakken op de bakplaat. De student maakt nu reclame voor beide productgroepen en krijgt niet langer een uurloon, maar 20% van de omzet van beide productgroepen.',
       opties: [
         { id: 'a', tekst: '€390 lager dan in maart' },
         { id: 'b', tekst: '€350 lager dan in maart' },
@@ -136,11 +141,11 @@ export const deel1: Deel = {
       ],
       juistAntwoord: 'c',
       uitleg:
-        'Antwoord c. Maart directe variabele kosten: gehakt 2.500×€0,70 = €1.750 (student was vast uurloon = direct constant; boter was indirect). April: gehakt 1.500×€0,70 = €1.050 + stroop 1.000×€0,35 = €350 → €1.400 grondstof. Studentloon wordt nu omzetafhankelijk = direct variabel: omzet = 1.500×€1,20 + 1.000×€0,90 = €1.800 + €900 = €2.700; 20% = €540. Boter is nu indirect (valt af). April direct variabel = €1.400 + €540 = €1.940 vs. maart €1.750 → €190? Let op: het officiële antwoord telt de verschuivingen per saldo en komt op €150 hoger. Kern: grondstof daalt, maar de verkoopkosten veranderen van direct-constant naar direct-variabel; per saldo +€150.',
+        'Antwoord c. MAART (één product, dus álles is direct toewijsbaar): direct + variabel = gehakt 2.500×€0,70 = €1.750 én de boter €40 (variabel, en direct omdat er maar één product is) → €1.790. Het studentloon was een vast uurloon → direct máár constant (telt niet mee). APRIL: gehakt 1.500×€0,70 = €1.050 + stroop 1.000×€0,35 = €350. De boter is nu indirect (twee producten door elkaar gebakken) en valt af. Het studentloon wordt omzetafhankelijk = direct variabel: omzet = 1.500×€1,20 + 1.000×€0,90 = €2.700; 20% = €540. April = €1.050 + €350 + €540 = €1.940. Verschil = €1.940 − €1.790 = €150 hoger.',
       hints: [
-        'Bepaal eerst welke posten in elke maand "direct én variabel" zijn — de categorie van een post kan veranderen!',
-        'Maart: student = vast uurloon (direct constant). April: student = 20% van omzet (direct variabel). Boter wordt indirect.',
-        'Reken grondstofkosten maart vs. april uit, en tel het nieuwe omzetafhankelijke studentloon erbij.',
+        'Bepaal per maand welke posten "direct én variabel" zijn — de categorie van een post kan per maand veranderen!',
+        'Maart heeft maar één product: dan is ook de boter direct (en variabel). Het uurloon van de student is direct maar constant.',
+        'April: boter wordt indirect (twee producten); het studentloon wordt 20% van de omzet = direct variabel.',
       ],
       bron: 'pdf',
       bronLabel: 'Tentamen 12-6-2025 — 43% goed',
@@ -153,7 +158,7 @@ export const deel1: Deel = {
       type: 'mc',
       stam: 'De kosten in maart die zowel variabel als direct zijn (kwadrant II) bedragen:',
       context:
-        'Hamburgers €0,50 gehakt/stuk, stroopwafels €0,25 stroop/stuk. Bakplaat-afschrijving €600. Bakboter €80 (door elkaar gebakken). Student: 20% van de omzet van beide groepen. 2.000 hamburgers à €1,20, 2.500 stroopwafels à €0,75.',
+        'Uw onderneming op de Grote Markt in Groningen, maand maart. U bakt en verkoopt hamburgers en stroopwafels: €0,50 gehakt per hamburger (kostenpost 1), €0,25 stroop per stroopwafel (kostenpost 2). Bakplaat: €600 afschrijving per maand (kostenpost 3). Naarmate u meer bakt verbruikt u meer bakboter; in maart €80 — hamburgers en stroopwafels worden vrolijk door elkaar gebakken (kostenpost 4). Een student loopt met reclameborden voor uw koopwaar en krijgt 20% van de omzet van beide productgroepen (kostenpost 5). U bakt en verkoopt 2.000 hamburgers à €1,20 en 2.500 stroopwafels à €0,75. Geen begin- of eindvoorraden.\n\nKwadranten: II = direct+variabel, I = indirect+variabel, III = direct+constant, IV = indirect+constant.',
       opties: [
         { id: 'a', tekst: '€1.625' },
         { id: 'b', tekst: '€1.950' },
@@ -176,7 +181,9 @@ export const deel1: Deel = {
       id: 'd1-toerekening',
       deel: 1,
       type: 'mc',
-      stam: 'Je besluit de kosten van boter en bakplaat naar rato van de gebakken aantallen toe te rekenen aan hamburgers en stroopwafels. Wat betekent dat voor de kostenstructuur?',
+      stam: 'Aangezien hamburgers en stroopwafels qua fysieke omvang ongeveer even groot zijn, besluit je de kosten van de boter en de bakplaat naar rato van de gebakken aantallen toe te rekenen. Wat betekent dat voor de kostenstructuur?',
+      context:
+        'Zelfde onderneming op de Grote Markt (maart): hamburgers (€0,50 gehakt/stuk) en stroopwafels (€0,25 stroop/stuk) worden door elkaar gebakken op één bakplaat (afschrijving €600/maand). Bakboter kostte €80 en hangt af van hoeveel je bakt. 2.000 hamburgers à €1,20 en 2.500 stroopwafels à €0,75 gebakken en verkocht.',
       opties: [
         { id: 'a', tekst: 'De kostenstructuur verandert niet.' },
         { id: 'b', tekst: 'Constante kosten veranderen in variabele kosten.' },
@@ -197,8 +204,9 @@ export const deel1: Deel = {
       id: 'd1-premieloon',
       deel: 1,
       type: 'mc',
-      stam: 'Je stapt over op een premieloonstelsel voor de student. In welk kwadrant nemen de kosten in ieder geval toe?',
-      context: 'Kwadranten: I = indirect+variabel, II = direct+variabel, III = direct+constant, IV = indirect+constant.',
+      stam: 'Je besluit over te stappen op een premieloonstelsel voor de student. In welk kwadrant zullen de kosten in ieder geval toenemen?',
+      context:
+        'Zelfde onderneming op de Grote Markt (maart): je verkoopt hamburgers en stroopwafels. Een student loopt met reclameborden in het centrum en kreeg tot nu toe 20% van de omzet van beide productgroepen — een zuiver stukloon dus (variabel, en direct toewijsbaar omdat de omzet per productgroep bekend is).\n\nKwadranten: I = indirect+variabel, II = direct+variabel, III = direct+constant, IV = indirect+constant.',
       opties: [
         { id: 'a', tekst: 'kwadrant I' },
         { id: 'b', tekst: 'kwadrant II' },
@@ -220,7 +228,7 @@ export const deel1: Deel = {
       id: 'd1-water',
       deel: 1,
       type: 'mc',
-      stam: 'Je verkoopt glazen water en ranja uit de kraan; glazen worden ingeleverd, afgespoeld en hergebruikt. Welke grootheid is NIET op het water van toepassing?',
+      stam: 'Op Koningsdag verkoop je glazen water (uit de kraan) aan voorbijgangers. Sommige klanten willen liever ranja, dus met limonadesiroop gebruik je het water óók om glazen ranja te verkopen. Klanten leveren het glas na consumptie weer in, waarna je het onder de kraan afspoelt en afdroogt voor hergebruik. Welke grootheid is NIET op het water van toepassing?',
       opties: [
         { id: 'a', tekst: 'grondstof' },
         { id: 'b', tekst: 'hulpstof' },

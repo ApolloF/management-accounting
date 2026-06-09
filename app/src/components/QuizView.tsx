@@ -52,7 +52,9 @@ export function QuizView({
         ← Terug naar theorie
       </button>
       <div className="quiz-head">
-        <h2 style={{ margin: 0, fontSize: 'var(--fs-lg)' }}>Deel {romein(deel.nr)} — oefenvragen</h2>
+        <h2 style={{ margin: 0, fontSize: 'var(--fs-lg)' }}>
+          {deel.nr === 8 ? 'Open vragen — oefenen' : `Deel ${romein(deel.nr)} — oefenvragen`}
+        </h2>
         <span className="q-counter">
           {vragen.length > 0 ? `Vraag ${veiligIdx + 1} / ${vragen.length}` : '0 vragen'}
         </span>

@@ -10,7 +10,7 @@ export const deel4: Deel = {
     {
       titel: 'Economische levensduur van een machine',
       uitleg:
-        'De **economische levensduur** is het gebruiksjaar waarin de gemiddelde **kosten per machine-uur** het láágst zijn. Bereken cumulatief per jaar:\n\n`Kosten per machine-uur = (cumulatieve waardedaling + cumulatieve complementaire kosten) ÷ cumulatief aantal machine-uren`\n\n- **Waardedaling** = aanschafwaarde − restwaarde aan het einde van dat jaar (cumulatief).\n- **Complementaire kosten** = bediening, onderhoud, brandstof, reparaties (cumulatief).\n\nHet jaar met de laagste kosten per machine-uur is de economische levensduur.\n\n**Restwaarde bij verkoop tegen boekwaarde:** als een machine aan het eind tegen boekwaarde wordt verkocht (geen boekwinst/-verlies), reken je terug: waarde machine-uren − complementaire kosten = component afschrijvingen; restwaarde = aanschafwaarde − cumulatieve afschrijvingen.',
+        'De **economische levensduur** is het gebruiksjaar waarin de gemiddelde **kosten per machine-uur** het láágst zijn. Bereken cumulatief per jaar:\n\n`Kosten per machine-uur = (cumulatieve waardedaling + cumulatieve complementaire kosten) ÷ cumulatief aantal machine-uren`\n\n- **Waardedaling** = aanschafwaarde − restwaarde aan het einde van dat jaar (cumulatief).\n- **Complementaire kosten** = bediening, onderhoud, brandstof, reparaties (cumulatief).\n\nHet jaar met de laagste kosten per machine-uur is de economische levensduur.\n\n> ⚠️ **Begrippen:** de economische levensduur wordt bepaald door de **totale** kosten per eenheid (afschrijving + complementaire kosten), níet door de afschrijvingskosten alleen. "Relatieve technische levensduur" is géén synoniem voor economische levensduur en geen economisch begrip; de **absolute technische levensduur** is het moment waarop het actief niet meer kan presteren.\n\n**Restwaarde bij verkoop tegen boekwaarde:** als een machine aan het eind tegen boekwaarde wordt verkocht (geen boekwinst/-verlies), reken je terug: waarde machine-uren − complementaire kosten = component afschrijvingen; restwaarde = aanschafwaarde − cumulatieve afschrijvingen.',
       formules: [
         'Kosten/machine-uur = (cum. waardedaling + cum. complementaire kosten) ÷ cum. machine-uren',
         'Economische levensduur = jaar met de laagste kosten per machine-uur',
@@ -201,7 +201,9 @@ export const deel4: Deel = {
       id: 'd4-rentabiliteit',
       deel: 4,
       type: 'mc',
-      stam: 'Nieuw scenario: restwaarde €6.000 → €12.000, plus onderhoudskosten €1.200/jaar (= even hoog als de minder-afschrijving). Overige uitgangspunten gelijk. T.o.v. de uitgangssituatie wordt de gemiddelde boekhoudkundige rentabiliteit:',
+      stam: 'Na nadere analyse blijkt een ander scenario realistischer: de restwaarde wordt niet €6.000 maar €12.000, en er komt een jaarlijkse uitgavenpost onderhoudskosten van €1.200 bij. Overige uitgangspunten gelijk. T.o.v. de uitgangssituatie wordt de gemiddelde boekhoudkundige rentabiliteit:',
+      context:
+        'Machine: aanschaf €42.000, in 5 jaar lineair afgeschreven tot restwaarde €6.000. Omzet jaar 1 €25.000, jaarlijkse groei €2.500; verkoopprijs €10 per product. Grondstofkosten 20% en arbeidskosten 44% van de verkoopprijs. Geen omzetbelasting; 25% vennootschapsbelasting over de winst.\n\nTip: de extra onderhoudskosten (€1.200/jaar) zijn precies even hoog als de lagere afschrijving ((€12.000−€6.000)/5 jaar).',
       opties: [
         { id: 'a', tekst: 'hoger' },
         { id: 'b', tekst: 'niet veranderen' },
@@ -222,7 +224,9 @@ export const deel4: Deel = {
       id: 'd4-tvp',
       deel: 4,
       type: 'mc',
-      stam: 'TVP1 = boekhoudkundige terugverdienperiode bij lineaire afschrijving. TVP2 = bij afschrijving per stuk (oplopend in de tijd, totaal gelijk). Mandy constateert dat:',
+      stam: 'Mandy berekent de boekhoudkundige terugverdienperiode bij lineaire afschrijving (TVP 1) en bij afschrijving per taart — elke taart krijgt evenveel afschrijving toegerekend, dus de jaarlijkse afschrijvingskosten lopen op met de groeiende afzet; gesommeerd over de levensduur gelijk aan lineair (TVP 2). Mandy constateert dat:',
+      context:
+        'Tweedehands deegmachine: aanschaf €35.000, in 5 jaar af te schrijven tot restwaarde €5.000. Omzet jaar 1 €20.000, jaarlijkse groei €5.000; verkoopprijs €10 per taart. Grondstofkosten 20% en arbeidskosten 50% van de verkoopprijs. Geen omzetbelasting; 25% vennootschapsbelasting over de winst.',
       opties: [
         { id: 'a', tekst: 'TVP2 korter is dan TVP1' },
         { id: 'b', tekst: 'TVP2 gelijk is aan TVP1' },
