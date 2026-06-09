@@ -1,0 +1,105 @@
+/* ============================================================
+   Design tokens — MA BDK tentamen-prep
+   Rustige, focus-vriendelijke leeromgeving.
+   Eén bron van waarheid voor kleur / typografie / spacing / radius.
+   ============================================================ */
+:root {
+  /* --- Kleur: neutraal (slate) --- */
+  --c-bg: #f6f7f9;
+  --c-surface: #ffffff;
+  --c-surface-2: #f0f2f5;
+  --c-border: #e2e6ea;
+  --c-border-strong: #cbd2d9;
+  --c-text: #1c2530;
+  --c-text-soft: #51606e;
+  --c-text-faint: #8794a1;
+
+  /* --- Kleur: brand (rustig indigo/teal) --- */
+  --c-brand: #2f6f8f;
+  --c-brand-hover: #275d78;
+  --c-brand-soft: #e6f0f4;
+  --c-brand-text: #1d4a60;
+
+  /* --- Semantisch --- */
+  --c-success: #2e7d57;
+  --c-success-soft: #e4f3eb;
+  --c-danger: #c0463b;
+  --c-danger-soft: #fbe9e7;
+  --c-warn: #b07400;
+  --c-warn-soft: #fbf1dc;
+  --c-info: #2f6f8f;
+  --c-info-soft: #e6f0f4;
+
+  /* --- Difficulty badges --- */
+  --c-diff-makkelijk: #2e7d57;
+  --c-diff-gemiddeld: #2f6f8f;
+  --c-diff-lastig: #b07400;
+  --c-diff-berucht: #c0463b;
+
+  /* --- Typografie --- */
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Cascadia Code", monospace;
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.35rem;
+  --fs-xl: 1.7rem;
+  --fs-2xl: 2.2rem;
+  --lh-tight: 1.25;
+  --lh-base: 1.6;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* --- Spacing (4px-basis) --- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+
+  /* --- Radius --- */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-full: 999px;
+
+  /* --- Elevatie --- */
+  --sh-1: 0 1px 2px rgba(20, 30, 40, 0.06), 0 1px 3px rgba(20, 30, 40, 0.05);
+  --sh-2: 0 2px 6px rgba(20, 30, 40, 0.08), 0 4px 12px rgba(20, 30, 40, 0.06);
+  --sh-3: 0 8px 24px rgba(20, 30, 40, 0.12);
+
+  /* --- Motion --- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+
+  /* --- Layout --- */
+  --maxw: 880px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #12171c;
+    --c-surface: #1a2128;
+    --c-surface-2: #222b33;
+    --c-border: #2c363f;
+    --c-border-strong: #3b4853;
+    --c-text: #e7ecf1;
+    --c-text-soft: #aab6c1;
+    --c-text-faint: #76838f;
+    --c-brand: #4fa3c7;
+    --c-brand-hover: #6bb6d6;
+    --c-brand-soft: #1d2e37;
+    --c-brand-text: #9fd3e8;
+    --c-success-soft: #16291f;
+    --c-danger-soft: #2c1916;
+    --c-warn-soft: #2a2110;
+    --c-brand-text: #bfe2f0;
+  }
+}

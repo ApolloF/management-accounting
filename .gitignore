@@ -1,0 +1,28 @@
+# ---- Cursusmateriaal NIET committen (privé/auteursrechtelijk lesmateriaal) ----
+# Aangelijnd op de repo-root (leading slash), zodat app/ volledig getrackt blijft.
+/*.pdf
+/*.doc
+/*.docx
+/*.xlsx
+/*.xls
+/*.html
+/Oefententamen/
+/studiehandleiding*
+/samenvatting*
+/uitgebreide-samenvatting*
+/MA BDK digitaal leerboek*
+/deel *
+
+# ---- Node / build (overal) ----
+node_modules/
+dist/
+*.log
+*.tsbuildinfo
+.DS_Store
+
+# ---- Lokale tooling ----
+.claude/
+
+# ---- Editor ----
+.vscode/
+.idea/

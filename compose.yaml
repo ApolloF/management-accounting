@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: ma-bdk-tentamen-prep
+    container_name: ma-bdk-tentamen-prep
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,229 @@
+import { useMemo, useState } from 'react'
+import type { Deel, Vraag } from '../types'
+import { Badge, Button, Card, DifficultyBadge, ProgressBar, Toggle } from './ui'
+import type { ProgressApi } from '../hooks/useProgress'
+import { zichtbareVragen } from '../content'
+
+export function QuizView({
+  deel,
+  progress,
+  onNaarTheorie,
+  onKlaar,
+}: {
+  deel: Deel
+  progress: ProgressApi
+  onNaarTheorie: () => void
+  onKlaar: () => void
+}) {
+  const toon = progress.state.toonZelfgemaakt
+  const vragen = useMemo(() => zichtbareVragen(deel, toon), [deel, toon])
+  const [idx, setIdx] = useState(0)
+
+  // Houd de index binnen de grenzen als het aantal vragen verandert (toggle).
+  const veiligIdx = Math.min(idx, vragen.length - 1)
+  const vraag = vragen[veiligIdx]
+
+  if (!vraag) return null
+
+  return (
+    <div>
+      <button className="crumb" onClick={onNaarTheorie} style={{ marginBottom: 8 }}>
+        ← Terug naar theorie
+      </button>
+      <div className="quiz-head">
+        <h2 style={{ margin: 0, fontSize: 'var(--fs-lg)' }}>
+          Deel {romein(deel.nr)} — oefenvragen
+        </h2>
+        <span className="q-counter">
+          Vraag {veiligIdx + 1} / {vragen.length}
+        </span>
+      </div>
+
+      <div className="quiz-toolbar">
+        <Toggle
+          checked={toon}
+          onChange={(v) => {
+            progress.setToonZelfgemaakt(v)
+            setIdx(0)
+          }}
+          label="Toon ook zelfgemaakte oefenvragen"
+        />
+      </div>
+
+      <ProgressBar value={((veiligIdx + 1) / vragen.length) * 100} />
+
+      <VraagKaart key={vraag.id} vraag={vraag} progress={progress} />
+
+      <div className="quiz-nav">
+        <Button variant="secondary" disabled={veiligIdx === 0} onClick={() => setIdx(veiligIdx - 1)}>
+          ← Vorige
+        </Button>
+        {veiligIdx < vragen.length - 1 ? (
+          <Button onClick={() => setIdx(veiligIdx + 1)}>Volgende →</Button>
+        ) : (
+          <Button onClick={onKlaar}>Naar mijn voortgang →</Button>
+        )}
+      </div>
+    </div>
+  )
+}
+
+function VraagKaart({ vraag, progress }: { vraag: Vraag; progress: ProgressApi }) {
+  const eerder = progress.statusVan(vraag.id)
+  const [gekozen, setGekozen] = useState<string | null>(null)
+  const [gecontroleerd, setGecontroleerd] = useState(false)
+  const [hintsOpen, setHintsOpen] = useState(0)
+  const [openTekst, setOpenTekst] = useState('')
+  const [openOnthuld, setOpenOnthuld] = useState(false)
+
+  const toonHint = () => {
+    const n = Math.min(hintsOpen + 1, vraag.hints.length)
+    setHintsOpen(n)
+    progress.registreerHint(vraag.id, n)
+  }
+
+  const controleer = () => {
+    if (vraag.type === 'mc') {
+      if (!gekozen) return
+      setGecontroleerd(true)
+      progress.beantwoord(vraag.id, gekozen === vraag.juistAntwoord, hintsOpen)
+    }
+  }
+
+  const isMC = vraag.type === 'mc'
+
+  return (
+    <Card className="mt-4">
+      <div className="row between" style={{ marginBottom: 8 }}>
+        <div className="row" style={{ gap: 8 }}>
+          {vraag.difficulty && <DifficultyBadge difficulty={vraag.difficulty} />}
+          {vraag.bron === 'zelfgemaakt' ? (
+            <Badge>Zelfgemaakt</Badge>
+          ) : (
+            <Badge variant="brand">{vraag.bronLabel ?? 'Echte tentamenvraag'}</Badge>
+          )}
+        </div>
+        {eerder?.beantwoord && (
+          <span className="muted">
+            Eerder: {eerder.goed ? '✓ goed' : '✗ fout'}
+            {eerder.hintsGebruikt > 0 && ` · ${eerder.hintsGebruikt} hint(s)`}
+          </span>
+        )}
+      </div>
+
+      {vraag.context && <div className="q-context">{vraag.context}</div>}
+      <div className="q-stam">{vraag.stam}</div>
+
+      {isMC && (
+        <div className="opties">
+          {vraag.opties!.map((o) => {
+            let cls = 'optie'
+            if (gecontroleerd) {
+              if (o.id === vraag.juistAntwoord) cls += ' correct'
+              else if (o.id === gekozen) cls += ' wrong'
+            } else if (o.id === gekozen) {
+              cls += ' selected'
+            }
+            return (
+              <button
+                key={o.id}
+                className={cls}
+                disabled={gecontroleerd}
+                onClick={() => setGekozen(o.id)}
+              >
+                <span className="letter">{o.id}</span>
+                <span>{o.tekst}</span>
+              </button>
+            )
+          })}
+        </div>
+      )}
+
+      {!isMC && (
+        <textarea
+          className="open-antwoord"
+          placeholder="Schrijf hier je uitwerking / antwoord…"
+          value={openTekst}
+          onChange={(e) => setOpenTekst(e.target.value)}
+          disabled={openOnthuld}
+        />
+      )}
+
+      {/* Hints */}
+      <div className="hints">
+        <div className="hint-row">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={toonHint}
+            disabled={hintsOpen >= vraag.hints.length}
+          >
+            💡 {hintsOpen === 0 ? 'Hint' : hintsOpen >= vraag.hints.length ? 'Geen hints meer' : 'Nog een hint'}
+          </Button>
+          {hintsOpen > 0 && (
+            <span className="muted">
+              {hintsOpen}/{vraag.hints.length} hint(s) gebruikt — wordt onthouden
+            </span>
+          )}
+        </div>
+        {vraag.hints.slice(0, hintsOpen).map((h, i) => (
+          <div className="hint-card" key={i}>
+            <span className="h-lbl">Hint {i + 1}</span>
+            {h}
+          </div>
+        ))}
+      </div>
+
+      {/* Actie + feedback */}
+      {isMC && !gecontroleerd && (
+        <Button onClick={controleer} disabled={!gekozen}>
+          Controleer antwoord
+        </Button>
+      )}
+
+      {isMC && gecontroleerd && (
+        <div className={`feedback ${gekozen === vraag.juistAntwoord ? 'goed' : 'fout'}`}>
+          <div className="f-title">
+            {gekozen === vraag.juistAntwoord ? '✓ Juist!' : '✗ Niet juist'}
+          </div>
+          <div className="uitleg">{vraag.uitleg}</div>
+        </div>
+      )}
+
+      {!isMC && !openOnthuld && (
+        <Button onClick={() => setOpenOnthuld(true)}>Toon uitwerking</Button>
+      )}
+
+      {!isMC && openOnthuld && (
+        <>
+          <div className="feedback goed">
+            <div className="f-title">Uitwerking</div>
+            <div className="uitleg">{vraag.uitleg}</div>
+          </div>
+          <div className="row" style={{ gap: 8 }}>
+            <span className="muted">Had je dit goed?</span>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => progress.beantwoord(vraag.id, true, hintsOpen)}
+            >
+              ✓ Goed
+            </Button>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => progress.beantwoord(vraag.id, false, hintsOpen)}
+            >
+              ✗ Fout
+            </Button>
+            {eerder?.beantwoord && <span className="muted">opgeslagen</span>}
+          </div>
+        </>
+      )}
+    </Card>
+  )
+}
+
+function romein(n: number): string {
+  return ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII'][n] ?? String(n)
+}
