@@ -8,6 +8,7 @@ import { deel6 } from './deel6'
 import { deel7 } from './deel7'
 import { zelfgemaakteVragen } from './zelfgemaakt'
 import { extraVragen } from './extraVragen'
+import { tentamen2026Vragen } from './tentamen2026'
 import { boekhouden } from './boekhouden'
 
 // Apart "deel" voor het open-vraag gedeelte (fabricageboekhouding). Telt NIET
@@ -15,6 +16,13 @@ import { boekhouden } from './boekhouden'
 export { boekhouden }
 
 const ruweDelen: Deel[] = [deel1, deel2, deel3, deel4, deel5, deel6, deel7]
+
+// Echte tentamenvragen 11-6-2026 toevoegen aan het juiste deel (de meest recente
+// échte toets; bovenaan de extra echte vragen).
+for (const v of tentamen2026Vragen) {
+  const d = ruweDelen.find((x) => x.nr === v.deel)
+  if (d) d.vragen.push(v)
+}
 
 // Extra echte tentamenvragen (2023/2024) toevoegen aan het juiste deel — vóór de
 // zelfgemaakte, zodat die laatste altijd onderaan staan.
@@ -35,6 +43,7 @@ function inferCategorie(v: Vraag): BronCategorie {
   if (v.bron === 'zelfgemaakt') return 'zelfgemaakt'
   const l = (v.bronLabel ?? '').toLowerCase()
   if (l.includes('formatieve')) return 'formatief'
+  if (l.includes('2026') || l.includes('11-6')) return 'tentamen-2026'
   if (l.includes('hertentamen') || l.includes('2024')) return 'hertentamen-2024'
   if (l.includes('2023')) return 'tentamen-2023'
   if (l.includes('2025') || l.includes('12-6')) return 'tentamen-2025'
@@ -50,6 +59,7 @@ export const delen: Deel[] = ruweDelen
 
 export const BRON_LABELS: Record<BronCategorie, string> = {
   formatief: 'Formatieve toets',
+  'tentamen-2026': 'Tentamen 2026',
   'tentamen-2025': 'Tentamen 2025',
   'hertentamen-2024': 'Hertentamen 2024',
   'tentamen-2023': 'Tentamen 2023',

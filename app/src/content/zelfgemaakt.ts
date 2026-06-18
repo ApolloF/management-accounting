@@ -148,4 +148,125 @@ export const zelfgemaakteVragen: Vraag[] = [
     bronLabel: 'Extra oefenvraag',
     difficulty: 'lastig',
   },
+  // ===== GERECONSTRUEERD uit geheugen: tentamen 11-6-2026, niet-gefotografeerde vragen 30-34 =====
+  // Deel V (prestatiemanagement / resultaatverantwoording). Exacte vraagtekst en opties zijn
+  // ONBEKEND; deze zijn op onderwerp nagemaakt met zelf gekozen cijfers. De juiste letters van de
+  // echte vragen (30=d, 31=b, 32=d, 33=d, 34=b) horen NIET per se bij deze reconstructies.
+  {
+    id: 'z26-roi-brutowinst',
+    deel: 5,
+    type: 'mc',
+    stam: 'Welk filiaal behaalt de hoogste brutowinst? (brutowinst = geïnvesteerd vermogen × omloopsnelheid van het vermogen × brutowinstmarge)',
+    context:
+      'Vier filialen (geïnvesteerd vermogen · omloopsnelheid · brutowinstmarge):\n· A: €200.000 · 3,0 · 8%\n· B: €150.000 · 4,0 · 9%\n· C: €300.000 · 2,0 · 10%\n· D: €250.000 · 2,5 · 7%',
+    opties: [
+      { id: 'a', tekst: 'filiaal A (€48.000)' },
+      { id: 'b', tekst: 'filiaal B (€54.000)' },
+      { id: 'c', tekst: 'filiaal C (€60.000)' },
+      { id: 'd', tekst: 'filiaal D (€43.750)' },
+    ],
+    juistAntwoord: 'c',
+    uitleg:
+      'Antwoord c. Omzet = vermogen × omloopsnelheid; brutowinst = omzet × marge = vermogen × omloopsnelheid × marge.\nA: 200.000×3,0×8% = €48.000 · B: 150.000×4,0×9% = €54.000 · C: 300.000×2,0×10% = €60.000 · D: 250.000×2,5×7% = €43.750. Hoogste = C.',
+    hints: [
+      'Omloopsnelheid van het vermogen = omzet / geïnvesteerd vermogen → omzet = vermogen × omloopsnelheid.',
+      'Brutowinst = omzet × brutowinstmarge. Reken alle vier uit en vergelijk.',
+    ],
+    bron: 'zelfgemaakt',
+    bronLabel: 'Tentamen 2026 (Deel V) — gereconstrueerd',
+    difficulty: 'lastig',
+  },
+  {
+    id: 'z26-takken-winstgevend',
+    deel: 5,
+    type: 'mc',
+    stam: 'Welke takken zijn economisch winstgevend, d.w.z. creëren waarde bóven de vermogenskosten (vermogenskostenvoet 10%)?',
+    context:
+      'Per tak (nettowinst · geïnvesteerd vermogen):\n· tak 1: €22.000 · €200.000\n· tak 2: €18.000 · €200.000\n· tak 3: €33.000 · €300.000\n· tak 4: €12.000 · €150.000',
+    opties: [
+      { id: 'a', tekst: 'alleen tak 1' },
+      { id: 'b', tekst: 'tak 1 en tak 3' },
+      { id: 'c', tekst: 'tak 1, 2 en 3' },
+      { id: 'd', tekst: 'alle vier' },
+    ],
+    juistAntwoord: 'b',
+    uitleg:
+      'Antwoord b. Waarde gecreëerd als ROI > vermogenskostenvoet (of residual income RI = winst − 10%×vermogen > 0).\ntak 1: 22.000/200.000 = 11% (RI +€2.000) ✓ · tak 2: 9% (RI −€2.000) ✗ · tak 3: 33.000/300.000 = 11% (RI +€3.000) ✓ · tak 4: 8% (RI −€3.000) ✗. Dus tak 1 en 3.',
+    hints: [
+      'Reken per tak de ROI = nettowinst / geïnvesteerd vermogen.',
+      'Winstgevend bóven de vermogenskosten = ROI > 10% (oftewel residual income > 0).',
+    ],
+    bron: 'zelfgemaakt',
+    bronLabel: 'Tentamen 2026 (Deel V) — gereconstrueerd',
+    difficulty: 'lastig',
+  },
+  {
+    id: 'z26-ebit-berekening',
+    deel: 5,
+    type: 'mc',
+    stam: 'Bereken de EBIT.',
+    context:
+      'Gegeven: omzet €500.000; operationele kosten (excl. afschrijving) €380.000; afschrijvingen €40.000; rentelasten €15.000; vennootschapsbelasting €12.000.',
+    opties: [
+      { id: 'a', tekst: '€ 68.000' },
+      { id: 'b', tekst: '€ 80.000' },
+      { id: 'c', tekst: '€ 120.000' },
+      { id: 'd', tekst: '€ 53.000' },
+    ],
+    juistAntwoord: 'b',
+    uitleg:
+      'Antwoord b. EBIT (Earnings Before Interest and Taxes) = bedrijfsresultaat vóór rente en belasting = omzet − operationele kosten − afschrijvingen = 500.000 − 380.000 − 40.000 = €80.000. Rente (€15.000) en belasting (€12.000) trek je NIET af. (Let op: EBITDA = €80.000 + €40.000 afschrijving = €120.000 → distractor c.)',
+    hints: [
+      'EBIT = vóór rente en belasting → die twee posten laat je staan.',
+      'Afschrijvingen tellen wél mee in EBIT (anders krijg je EBITDA).',
+    ],
+    bron: 'zelfgemaakt',
+    bronLabel: 'Tentamen 2026 (Deel V) — gereconstrueerd',
+    difficulty: 'gemiddeld',
+  },
+  {
+    id: 'z26-ebit-vs-ebitda',
+    deel: 5,
+    type: 'mc',
+    stam: 'Wat is het verschil tussen EBIT en EBITDA?',
+    opties: [
+      { id: 'a', tekst: 'EBITDA is EBIT vóór aftrek van rente' },
+      { id: 'b', tekst: 'EBITDA = EBIT + afschrijvingen en amortisatie' },
+      { id: 'c', tekst: 'EBITDA = EBIT − belasting' },
+      { id: 'd', tekst: 'EBIT en EBITDA zijn synoniemen' },
+    ],
+    juistAntwoord: 'b',
+    uitleg:
+      'Antwoord b. EBITDA = Earnings Before Interest, Taxes, Depreciation and Amortisation = EBIT mét de afschrijvingen (depreciation) en amortisatie er weer bij opgeteld. Beide zijn vóór rente en belasting; EBITDA telt daarbovenop ook de afschrijvingen/amortisatie niet mee.',
+    hints: [
+      'De extra letters "DA" staan voor Depreciation & Amortisation (afschrijving & amortisatie).',
+      'EBITDA ligt dus hóger dan EBIT met precies de afschrijvingen + amortisatie.',
+    ],
+    bron: 'zelfgemaakt',
+    bronLabel: 'Tentamen 2026 (Deel V) — gereconstrueerd',
+    difficulty: 'gemiddeld',
+  },
+  {
+    id: 'z26-kpi-relatief',
+    deel: 5,
+    type: 'mc',
+    stam: 'Welk van deze kengetallen corrigeert voor de omvang van een resultaatverantwoordelijke eenheid (RVE) en is daarom geschikt om RVE’s van verschillende grootte te vergelijken?',
+    context: 'Kengetallen: kosten, EBIT, EBITDA, ROI, RI (residual income).',
+    opties: [
+      { id: 'a', tekst: 'EBIT' },
+      { id: 'b', tekst: 'EBITDA' },
+      { id: 'c', tekst: 'ROI' },
+      { id: 'd', tekst: 'RI (residual income)' },
+    ],
+    juistAntwoord: 'c',
+    uitleg:
+      'Antwoord c. Alleen de ROI (Return on Investment = winst / geïnvesteerd vermogen) is een RELATIEF kengetal (een %) dat corrigeert voor de omvang. Kosten, EBIT, EBITDA en RI zijn absolute bedragen in euro’s en zijn daardoor niet zonder meer vergelijkbaar tussen RVE’s van verschillende grootte.',
+    hints: [
+      'Zoek het kengetal dat een verhouding/percentage is, geen bedrag in euro’s.',
+      'RI is een bedrag (absoluut); ROI is een percentage (relatief).',
+    ],
+    bron: 'zelfgemaakt',
+    bronLabel: 'Tentamen 2026 (Deel V) — gereconstrueerd',
+    difficulty: 'gemiddeld',
+  },
 ]

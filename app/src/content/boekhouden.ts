@@ -39,6 +39,23 @@ const VOGELHUIS_CASUS =
   '\n' +
   'Standaardfabricagekostprijs per vogelhuisje (uitkomst van onderdeel I): €87.'
 
+// ---------- Casus 3: Mustang Hoofcare (ECHTE open opgave tentamen 11-6-2026) ----------
+
+const MHC_CASUS =
+  'CASUS — MUSTANG HOOFCARE (MHC), open opgave tentamen 11 juni 2026. U helpt uw oom met de administratie van MHC (gestart 1 januari, fabricage en verkoop van hoefijzers) en bepaalt het rendement over het eerste kwartaal. Alle werkelijk gemaakte kosten worden eerst in rubriek 4 per kostensoort geregistreerd. Grondstof- en personeelskosten zijn DIRECTE, de huurkosten INDIRECTE fabricagekosten. Verkoopkosten en onderhanden werk blijven buiten beschouwing.\n' +
+  '\n' +
+  'INTEGRALESTANDAARDKOSTPRIJS per hoefijzer (Q × P): grondstoffen 1,5 kg × €0,50 = €0,75; arbeid 0,040 uur × €30,00 = €1,20; toeslag indirecte kosten 0,040 uur × €12,50 = €0,50. Integralestandaardkostprijs = €2,45 per hoefijzer.\n' +
+  '\n' +
+  'GEREEDGEKOMEN (gefabriceerde) hoefijzers 1e kwartaal: 80.000 stuks.\n' +
+  '\n' +
+  'WERKELIJKE DIRECTE FABRICAGEKOSTEN 1e kwartaal: grondstof — 1,6 kg/hoefijzer, totaal 128.000 kg à €0,48 = €61.440. Arbeid — 0,038 uur/hoefijzer, totaal 3.040 uur à €32,00 = €97.280.\n' +
+  '\n' +
+  'VERKOOP: gefactureerd en afgeleverd 75.000 stuks; verkoopprijs €2,60 excl. 21% OB.\n' +
+  '\n' +
+  'REKENINGSCHEMA / OORSPRONKELIJKE SALDIBALANS (debet/credit): 040 Eigen vermogen €168.500 C · 110 Bank €83.500 C · 150 Debiteuren · 180 Te vorderen OB €19.750 D · 181 Te betalen OB · 190 Te betalen winstbelasting · 300 Voorraad grondstoffen €35.000 D · 410 Grondstofkosten €61.440 D · 430 Personeelskosten €97.280 D · 435 Huurkosten €37.390 D · 499 Overboekingsrekening · 560 Indirecte fabricagekosten · 565 Opslag indirecte fabricagekosten · 599 Overboekingsrekening · 600 Verbruik grondstoffen · 601 Directe personeelskosten · 602 Toeslag indirecte fabricagekosten · 610 Standaard verbruik grondstoffen · 611 Standaard directe personeelskosten · 612 Standaard toeslag indir.fab.ko’n · 699 Overboekingsrekening · 700 Voorraad gereed product · 800 Fabricagekostprijs verkopen · 840 Opbrengst verkopen · 899 Overboekingsrekening · 950 Resultaat indirecte kosten · 960 Fabricageresultaat · 980 Verkoopresultaat · 995 Interestkosten €1.140 D · 999 Overboekingsrekening. Totaal €252.000 = €252.000.\n' +
+  '\n' +
+  'LET OP: dit schema wijkt af van de formatieve-toetsopgave (hier o.a. 840 = Opbrengst verkopen, 950 = Resultaat indirecte kosten, 960 = Fabricageresultaat, 980 = Verkoopresultaat). Werk altijd met het schema op de opgave; de systematiek is dezelfde.'
+
 // Helper voor open vragen.
 const open = (q: Omit<Vraag, 'type' | 'bron' | 'deel'>): Vraag => ({
   ...q,
@@ -517,6 +534,183 @@ export const boekhouden: Deel = {
         'c3 is hier voordelig → 599 debet, Aan 910 (andersom dan bij de aquaria).',
         'c4: winst → eigen vermogen stijgt → Aan 042.',
         'Vergeet 990 Incidentele resultaten (€150 credit) niet.',
+      ],
+    }),
+    // ======================= ECHTE OPEN OPGAVE — MUSTANG HOOFCARE (11-6-2026) =======================
+    open({
+      id: 'mhc-kostprijs',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave (kostprijs)',
+      difficulty: 'gemiddeld',
+      stam: 'Toon de opbouw van de integralestandaardkostprijs per hoefijzer (€2,45).',
+      context: MHC_CASUS,
+      juistAntwoord: '€2,45 = €0,75 grondstof + €1,20 arbeid + €0,50 toeslag indirecte kosten',
+      uitleg:
+        'Grondstoffen: 1,5 kg × €0,50 = €0,75. Arbeid: 0,040 uur × €30,00 = €1,20. Toeslag indirecte fabricagekosten: 0,040 uur × €12,50 = €0,50.\nIntegralestandaardkostprijs = 0,75 + 1,20 + 0,50 = €2,45 per hoefijzer.',
+      hints: [
+        'Drie componenten: directe grondstof, directe arbeid, toeslag indirecte kosten (op basis van directe arbeidsuren).',
+        'De toeslag = standaarduren per hoefijzer × het toeslagtarief per uur (€12,50).',
+      ],
+    }),
+    open({
+      id: 'mhc-a',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave a',
+      difficulty: 'lastig',
+      stam: 'a. Leg de geproduceerde (gereedgekomen) hoefijzers vast in het journaal, gewaardeerd tegen integralestandaardkostprijs. Vermeld rekeningnummer, naam en "Aan".',
+      context: MHC_CASUS,
+      juistAntwoord: '700 €196.000 / Aan 610 €60.000, Aan 611 €96.000, Aan 612 €40.000',
+      uitleg:
+        '80.000 gereedgekomen hoefijzers × €2,45 = €196.000 naar de voorraad gereed product, uitgesplitst per standaardcomponent:\n610: 80.000 × €0,75 = €60.000; 611: 80.000 × €1,20 = €96.000; 612: 80.000 × €0,50 = €40.000.\n\n700 Voorraad gereed product € 196.000\n   Aan 610 Standaard verbruik grondstoffen € 60.000\n   Aan 611 Standaard directe personeelskosten € 96.000\n   Aan 612 Standaard toeslag indir.fab.ko’n € 40.000',
+      hints: [
+        'Gereed product komt tegen STANDAARDkostprijs in de voorraad (700 debet).',
+        'Splits de €2,45 in 0,75 / 1,20 / 0,50 en vermenigvuldig elk met 80.000.',
+        'Crediteer de standaardrekeningen 610/611/612.',
+      ],
+    }),
+    open({
+      id: 'mhc-b1',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave b1',
+      difficulty: 'lastig',
+      stam: 'b1. Maak de journaalpost met rekening 800 (uitlevering van de verkochte hoefijzers tegen integralestandaardkostprijs).',
+      context: MHC_CASUS,
+      juistAntwoord: '800 €183.750 / Aan 700 €183.750',
+      uitleg:
+        'Verkocht/afgeleverd: 75.000 stuks × €2,45 = €183.750. De voorraad gereed product verlaat tegen standaardkostprijs:\n\n800 Fabricagekostprijs verkopen € 183.750\n   Aan 700 Voorraad gereed product € 183.750',
+      hints: ['Uitlevering = verkochte aantallen × standaardkostprijs.', '800 debet, Aan 700.'],
+    }),
+    open({
+      id: 'mhc-b2',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave b2',
+      difficulty: 'lastig',
+      stam: 'b2. Maak de journaalpost met rekening 840 (de facturatie van de verkopen). Houd rekening met de omzetbelasting (21%).',
+      context: MHC_CASUS,
+      juistAntwoord: '150 €235.950 / Aan 181 €40.950, Aan 840 €195.000',
+      uitleg:
+        'Omzet = 75.000 × €2,60 = €195.000. OB = 21% × €195.000 = €40.950. Debiteuren (incl. OB) = €235.950.\n\n150 Debiteuren € 235.950\n   Aan 181 Te betalen OB € 40.950\n   Aan 840 Opbrengst verkopen € 195.000',
+      hints: ['Omzet excl. OB = 75.000 × €2,60.', 'OB = 21% van de omzet; debiteuren = omzet + OB.'],
+    }),
+    open({
+      id: 'mhc-b3',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave b3',
+      difficulty: 'berucht',
+      stam: 'b3. Maak de journaalpost met rekening 899: bepaal het transactieresultaat (rubriek 8) en boek het over. Toon de berekening en vermeld voor-/nadelig.',
+      context: MHC_CASUS,
+      juistAntwoord: '€11.250 voordelig → 899 €11.250 / Aan 980 Verkoopresultaat €11.250',
+      uitleg:
+        'Rubriek 8 salderen: 840 Opbrengst verkopen €195.000 credit − 800 Fabricagekostprijs verkopen €183.750 debet = €11.250 voordelig (= het transactieresultaat = 75.000 × (€2,60 − €2,45)).\nVoordelig saldo wegboeken via de overboekingsrekening:\n\n899 Overboekingsrekening € 11.250\n   Aan 980 Verkoopresultaat € 11.250',
+      hints: [
+        'Transactieresultaat = omzet − fabricagekostprijs verkopen (beide al geboekt in rubriek 8).',
+        'Ook = afzet × (verkoopprijs − standaardkostprijs) = 75.000 × €0,15.',
+        'Voordelig: 899 debet, Aan 980.',
+      ],
+    }),
+    open({
+      id: 'mhc-d',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave d',
+      difficulty: 'lastig',
+      stam: 'd. Wat wordt bedoeld met de term "zuiver verkoopresultaat", en is die term van toepassing op het door u berekende transactieresultaat?',
+      context: MHC_CASUS,
+      juistAntwoord: 'Ja — het transactieresultaat ís het zuivere verkoopresultaat: verkopen tegen werkelijke prijs minus de STANDAARD­kostprijs, dus niet vertroebeld door fabricageverschillen.',
+      uitleg:
+        'Het "zuiver verkoopresultaat" is het resultaat dat uitsluitend aan de verkoopfunctie is toe te rekenen: de afzet gewaardeerd tegen de werkelijke verkoopprijs minus de INTEGRALESTANDAARDkostprijs. Doordat de kostprijs op standaard staat, zit er géén vertroebeling in door prijs-, efficiency- of bezettingsverschillen uit de fabricage. Het berekende transactieresultaat (€11.250) is precies dat — verkopen × (€2,60 − €2,45) — dus de term is van toepassing.',
+      hints: [
+        '"Zuiver" = niet vervuild door fabricage-(in)efficiency.',
+        'Waardeer je de kostprijs op standaard, dan blijft alleen het verkoopeffect over.',
+      ],
+    }),
+    open({
+      id: 'mhc-e',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave e1/e2/e3',
+      difficulty: 'berucht',
+      stam: 'e. Bewaak de kwaliteit van de toerekening van indirecte kosten (rubriek 5). Maak drie journaalposten: e1 met rekening 560, e2 met rekening 565, e3 met rekening 599 (resultaat indirecte kosten).',
+      context: MHC_CASUS,
+      juistAntwoord: 'e1: 560 €37.390 / Aan 499. e2: 602 €38.000 / Aan 565 €38.000. e3: €610 voordelig → 599 €610 / Aan 950 €610',
+      uitleg:
+        'De enige indirecte fabricagekosten zijn de huurkosten (435) = €37.390.\n\ne1 — werkelijke indirecte fabricagekosten naar rubriek 5 (rubriek 4 in stand houden):\n560 Indirecte fabricagekosten € 37.390\n   Aan 499 Overboekingsrekening € 37.390\n\ne2 — toegerekende (standaard) indirecte kosten = standaardtarief × WERKELIJKE directe arbeidsuren = €12,50 × 3.040 = €38.000:\n602 Toeslag indirecte fabricagekosten € 38.000\n   Aan 565 Opslag indirecte fabricagekosten € 38.000\n\ne3 — resultaat indirecte kosten (rubriek 5): 565 €38.000 credit − 560 €37.390 debet = €610 voordelig:\n599 Overboekingsrekening € 610\n   Aan 950 Resultaat indirecte kosten € 610',
+      hints: [
+        'Werkelijke indirecte kosten = de huurkosten (€37.390); rubriek 4 in stand → Aan 499.',
+        'Toegerekend = €12,50 per uur × werkelijke directe uren (3.040) = €38.000.',
+        'Voordelig (toegerekend > werkelijk) → 599 debet, Aan 950.',
+      ],
+    }),
+    open({
+      id: 'mhc-f',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave f',
+      difficulty: 'gemiddeld',
+      stam: 'f. De indirecte kosten worden bij MHC toegerekend op basis van directe arbeidsuren, zonder causaal verband. Noem één methode uit het leerboek waarbij dat causale verband wél centraal staat.',
+      context: MHC_CASUS,
+      juistAntwoord: 'Activity-Based Costing (ABC)',
+      uitleg:
+        'Activity-Based Costing (ABC) rekent indirecte kosten toe via activiteiten en hun cost drivers, waarbij juist wél een oorzakelijk (causaal) verband wordt gelegd tussen de kostenveroorzaker en het product. Een opslag op directe arbeidsuren legt dat verband niet; ABC wel.',
+      hints: ['Toerekening via activiteiten en cost drivers.', 'De methode met "drivers" en een oorzakelijk verband begint met A.'],
+    }),
+    open({
+      id: 'mhc-g',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave g',
+      difficulty: 'lastig',
+      stam: 'g. Wat betekent het saldo tussen de rekeningen 601 en 611 (het "broertje-zusje") volgens de leerstof, en welke informatie geeft dat saldo bij MHC?',
+      context: MHC_CASUS,
+      juistAntwoord: 'Het totale verschil tussen werkelijke en standaard directe arbeidskosten = prijsverschil + efficiencyverschil op manuren (bij MHC €1.280 nadelig).',
+      uitleg:
+        '601 Directe personeelskosten = de WERKELIJKE directe arbeidskosten (€97.280); 611 Standaard directe personeelskosten = de STANDAARD arbeidskosten voor de werkelijke productie (€96.000). Het saldo = €1.280 nadelig en geeft het totale arbeidskostenverschil weer, dat is op te splitsen in een prijsverschil (PS−PW)×HW en een efficiencyverschil (SH−WH)×SP op de directe manuren.',
+      hints: [
+        '601 = werkelijk, 611 = standaard (voor de werkelijke productie).',
+        'Het verschil is de som van prijs- en efficiencyverschil op de directe arbeid.',
+      ],
+    }),
+    open({
+      id: 'mhc-h',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave h',
+      difficulty: 'berucht',
+      stam: 'h. Boek alsnog de ontbrekende werkelijke kosten op de rekeningen 600 t/m 612 en laat rubriek 6 "glad" lopen met rekening 699 (begin bij h1). Toon het fabricageresultaat (voor-/nadelig).',
+      context: MHC_CASUS,
+      juistAntwoord: 'h1: 600 €61.440 / Aan 499. h2: 601 €97.280 / Aan 499. h3 (699): fabricageresultaat €720 nadelig → 960 €720 / Aan 699 €720',
+      uitleg:
+        'Rekening 602 is al geboekt (e2). Nog te boeken zijn de werkelijke directe kosten (rubriek 4 in stand → Aan 499):\nh1: 600 Verbruik grondstoffen € 61.440 / Aan 499 € 61.440\nh2: 601 Directe personeelskosten € 97.280 / Aan 499 € 97.280\n\nRubriek 6 staat nu op: debet 600 €61.440 + 601 €97.280 + 602 €38.000 = €196.720; credit 610 €60.000 + 611 €96.000 + 612 €40.000 = €196.000. Saldo = €720 NADELIG (werkelijk/toegerekend > standaard).\nGlad maken via 699 en het fabricageresultaat naar rubriek 9:\nh3: 960 Fabricageresultaat € 720\n   Aan 699 Overboekingsrekening € 720\n\nControle van het saldo: grondstof €1.440 nadelig + arbeid €1.280 nadelig − indirect (602 vs 612) €2.000 voordelig = €720 nadelig.',
+      hints: [
+        '600/601 komen uit de werkelijke kosten in rubriek 4 (410/430) → Aan 499; 602 is al geboekt in e2.',
+        'Fabricageresultaat = totaal standaard (610+611+612) − totaal werkelijk/toegerekend (600+601+602).',
+        'Nadelig → 960 debet, Aan 699 (zo wordt rubriek 6 sluitend).',
+      ],
+    }),
+    open({
+      id: 'mhc-i',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave i',
+      difficulty: 'berucht',
+      stam: 'i. Bepaal het perioderesultaat aan de hand van rubriek 9 en boek het over naar het eigen vermogen. Toon de berekening.',
+      context: MHC_CASUS,
+      juistAntwoord: '€10.000 winst → 999 €10.000 / Aan 040 Eigen vermogen €10.000',
+      uitleg:
+        'Alle resultaten in rubriek 9 optellen:\n980 Verkoopresultaat (transactieresultaat b3) + €11.250\n950 Resultaat indirecte kosten (e3) + €610\n960 Fabricageresultaat (h3) − €720\n995 Interestkosten (oorspronkelijke saldibalans, debet) − €1.140\nPerioderesultaat = 11.250 + 610 − 720 − 1.140 = €10.000 VOORDELIG (winst).\n\nWinst verhoogt het eigen vermogen; rubriek 9 sluiten tegen 999 en het saldo naar 040:\n999 Overboekingsrekening € 10.000\n   Aan 040 Eigen vermogen € 10.000\n\n(NB de opgave bevestigt dat u op een winst moet uitkomen.)',
+      hints: [
+        'Tel álle rubriek-9-rekeningen op: verkoopresultaat + resultaat indirecte kosten − fabricageresultaat − interestkosten.',
+        'Vergeet de interestkosten (€1.140 debet) uit de oorspronkelijke saldibalans niet.',
+        'Winst → eigen vermogen stijgt → Aan 040.',
+      ],
+    }),
+    open({
+      id: 'mhc-j',
+      bronCategorie: 'tentamen-2026',
+      bronLabel: 'Tentamen 11-6-2026 — open opgave j',
+      difficulty: 'lastig',
+      stam: 'j. Stel dat er aan het einde van de periode tóch onderhanden werk (goederen in bewerking) was, met terugwerkende kracht verwerkt en gewaardeerd tegen integralestandaardkostprijs. In hoeverre heeft dat gevolgen voor het perioderesultaat? Licht toe.',
+      context: MHC_CASUS,
+      juistAntwoord: 'In beginsel geen gevolgen: het is slechts een herrubricering van voorraadwaarde tegen dezelfde standaardnorm; het perioderesultaat verandert niet.',
+      uitleg:
+        'Bij waardering tegen integralestandaardkostprijs heeft het onderkennen van onderhanden werk in beginsel géén invloed op het perioderesultaat. Het onderhanden werk wordt slechts tegen dezelfde standaardnorm van de ene voorraadrekening naar een rekening "goederen in bewerking" geschoven. Het perioderesultaat wordt bepaald door de verkopen (afzet × (verkoopprijs − standaardkostprijs)) plus de fabricage- en indirecte-kostenverschillen, en die wijzigen niet door het herrubriceren van nog niet gereed product. Er verschuift alleen voorraadwaarde op de balans, geen resultaat.',
+      hints: [
+        'Standaardwaardering → onderhanden werk is alleen een andere voorraadrubriek tegen dezelfde norm.',
+        'Het resultaat hangt aan de verkopen en de verschillen, niet aan de indeling van de voorraad.',
       ],
     }),
   ],

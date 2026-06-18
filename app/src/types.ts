@@ -5,6 +5,7 @@ export type Bron = 'pdf' | 'zelfgemaakt'
 // Herkomst van de vraag — voor het bron/jaar-filter.
 export type BronCategorie =
   | 'formatief'
+  | 'tentamen-2026'
   | 'tentamen-2025'
   | 'hertentamen-2024'
   | 'tentamen-2023'
